@@ -1,5 +1,6 @@
 README
 ------
 
-** Recomendamos o uso do exemplo contido neste diretório para criação do
-seu trabalho.
+Trabalho de conclusão de Curso de Rafael Wilson Dantas da Silva
+
+Universidade Tecnológica Federal Do Paraná
