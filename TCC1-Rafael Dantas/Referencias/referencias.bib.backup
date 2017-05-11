@@ -1,0 +1,346 @@
+% This file was created with JabRef 2.3.1.
+% Encoding: Cp1252
+
+@MISC{BlUM2005,
+    author = {Christian Blum},
+    title = { Ant colony optimization: Introduction and recent trends},
+    year = {2005}
+}
+@article{DORIGO2005,
+title = "Ant colony optimization theory: A survey",
+journal = "Theoretical Computer Science",
+volume = "344",
+number = "2",
+pages = "243 - 278",
+year = "2005",
+note = "",
+issn = "0304-3975",
+doi = "http://dx.doi.org/10.1016/j.tcs.2005.05.020",
+url = "http://www.sciencedirect.com/science/article/pii/S0304397505003798",
+author = "Marco Dorigo and Christian Blum",
+keywords = "Ant colony optimization",
+keywords = "Metaheuristics",
+keywords = "Combinatorial optimization",
+keywords = "Convergence",
+keywords = "Stochastic gradient descent",
+keywords = "Model-based search",
+keywords = "Approximate algorithms"
+}
+@ARTICLE{DORIGO1996,
+author={M. Dorigo and V. Maniezzo and A. Colorni},
+journal={IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)},
+title={Ant system: optimization by a colony of cooperating agents},
+year={1996},
+volume={26},
+number={1},
+pages={29-41},
+keywords={feedback;optimisation;robust control;search problems;simulated annealing;stochastic programming;travelling salesman problems;ant colonies;ant system;computational paradigm;constructive greedy heuristic;cooperating agents;distributed communication;distributed computation;global data structure revision;job-shop scheduling;optimization;parameter selection;positive feedback;probabilistic transitions;quadratic assignment;simulated annealing;stochastic combinatorial optimization;tabu search;traveling salesman problem;Ant colony optimization;Artificial intelligence;Computational modeling;Data structures;Distributed computing;Feedback;Intelligent robots;Robustness;Simulated annealing;Traveling salesman problems},
+doi={10.1109/3477.484436},
+ISSN={1083-4419},
+month={Feb}
+}
+
+@Inbook{DREO2002,
+author="Dr{\'e}o, Johann
+and Siarry, Patrick",
+editor="Dorigo, Marco
+and Di Caro, Gianni
+and Sampels, Michael",
+title="A New Ant Colony Algorithm Using the Heterarchical Concept Aimed at Optimization of Multiminima Continuous Functions",
+bookTitle="Ant Algorithms: Third International Workshop, ANTS 2002 Brussels, Belgium, September 12--14, 2002 Proceedings",
+year="2002",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="216--221",
+isbn="978-3-540-45724-4",
+doi="10.1007/3-540-45724-0_18",
+url="http://dx.doi.org/10.1007/3-540-45724-0_18"
+}
+@Article{FRIEDMAN1997,
+author="Friedman, Nir
+and Geiger, Dan
+and Goldszmidt, Moises",
+title="Bayesian Network Classifiers",
+journal="Machine Learning",
+year="1997",
+volume="29",
+number="2",
+pages="131--163",
+abstract="Recent work in supervised learning has shown that a surprisingly simple Bayesian classifier with strong assumptions of independence among features, called naive Bayes, is competitive with state-of-the-art classifiers such as C4.5. This fact raises the question of whether a classifier with less restrictive assumptions can perform even better. In this paper we evaluate approaches for inducing classifiers from data, based on the theory of learning Bayesian networks. These networks are factored representations of probability distributions that generalize the naive Bayesian classifier and explicitly represent statements about independence. Among these approaches we single out a method we call Tree Augmented Naive Bayes (TAN), which outperforms naive Bayes, yet at the same time maintains the computational simplicity (no search involved) and robustness that characterize naive Bayes. We experimentally tested these approaches, using problems from the University of California at Irvine repository, and compared them to C4.5, naive Bayes, and wrapper methods for feature selection.",
+issn="1573-0565",
+doi="10.1023/A:1007465528199",
+url="http://dx.doi.org/10.1023/A:1007465528199"
+}
+
+
+@BOOK{LINDEN2008,
+  title = {Algoritmos Gen\'eticos},
+  subtitle = {Uma importante ferramenta de intelig\^encia Computacional},
+  publisher = {Brasport},
+  year = {2008},
+  author = {Linden, Ricardo},
+  address = {S\~ao Paulo}
+}
+@Inbook{SEBASTIANI2010,
+author="Sebastiani, Paola
+and Abad, Maria M.
+and Ramoni, Marco F.",
+editor="Maimon, Oded
+and Rokach, Lior",
+title="Bayesian Networks",
+bookTitle="Data Mining and Knowledge Discovery Handbook",
+year="2010",
+publisher="Springer US",
+address="Boston, MA",
+pages="175--208",
+isbn="978-0-387-09823-4",
+doi="10.1007/978-0-387-09823-4_10",
+url="http://dx.doi.org/10.1007/978-0-387-09823-4_10"
+}
+
+
+
+%--------------------------------------------------------------------------------------------
+@MISC{abnTeX2009,
+  author = {abnTeX},
+  title = {Absurdas normas para \TeX},
+  year = {2009},
+  owner = {Hugo},
+  timestamp = {2009.11.08},
+  url = {http://sourceforge.net/apps/ mediawiki/abntex/index.php},
+  urlaccessdate = {8 de novembro de 2009}
+}
+
+@MISC{BibTeX2009,
+  author = {BibTeX},
+  title = {Bib\TeX.org},
+  year = {2009},
+  owner = {Hugo},
+  timestamp = {2009.11.08},
+  url = {http://www.bibtex.org},
+  urlaccessdate = {8 de novembro de 2009}
+}
+
+@BOOK{Buerger1989,
+  title = {\LaTeX\ for scientists and engineers},
+  publisher = {McGraw-Hill},
+  year = {1989},
+  author = {Buerger, David John},
+  address = {Singapura},
+  owner = {Hugo},
+  timestamp = {2009.11.08}
+}
+
+@MISC{CTAN2009,
+  author = {CTAN},
+  title = {The comprehensive \TeX\ archive network},
+  year = {2009},
+  owner = {Hugo},
+  timestamp = {2009.11.08},
+  url = {http://www.ctan. org},
+  urlaccessdate = {8 de novembro de 2009}
+}
+
+@BOOK{DAELN2006,
+  title = {Normas de apresenta\c{c}\~ao de trabalhos acad\^emicos do {DAELN}},
+  publisher = {Departamento Acad\^emico de Eletr\^onica da UTFPR},
+  year = {2006},
+  editor = {David, Denise Elizabeth Hey and Crocetti, Simone},
+  author = {DAELN},
+  address = {Curitiba},
+  owner = {Hugo},
+  timestamp = {2009.11.08}
+}
+
+@BOOK{Goossens2007,
+  title = {The \LaTeX\ graphics companion},
+  publisher = {Addison-Wesley},
+  year = {2007},
+  author = {Goossens, Michel and Mittelbach, Frank and Rahtz, Sebastian and Roegel,
+	Denis and Voss, Herbert},
+  address = {Boston},
+  edition = {2},
+  owner = {Hugo},
+  timestamp = {2009.11.08}
+}
+
+@MISC{JabRef2009,
+  author = {JabRef},
+  title = {JabRef reference manager},
+  year = {2009},
+  owner = {Hugo},
+  timestamp = {2009.11.08},
+  url = {http://jabref.sourceforge.net},
+  urlaccessdate = {8 de novembro de 2009}
+}
+
+@BOOK{Kopka2003,
+  title = {Guide to \LaTeX},
+  publisher = {Addison-Wesley},
+  year = {2003},
+  author = {Kopka, Helmut and Daly, Patrick W.},
+  address = {Boston},
+  edition = {4},
+  owner = {Hugo},
+  timestamp = {2009.11.08}
+}
+
+@BOOK{Lamport1986,
+  title = {\LaTeX: \normalfont a document preparation system},
+  publisher = {Addison-Wesley},
+  year = {1986},
+  author = {Lamport, Leslie},
+  address = {Reading},
+  owner = {Hugo},
+  timestamp = {2009.11.08}
+}
+
+@MISC{LaTeX2009,
+  author = {LaTeX},
+  title = {The \LaTeX\ project},
+  year = {2009},
+  owner = {Hugo},
+  timestamp = {2009.11.08},
+  url = {http://www.latex-project.org},
+  urlaccessdate = {8 de novembro de 2009}
+}
+
+@MISC{Mendeley2009,
+  author = {Mendeley},
+  title = {Mendeley: \normalfont academic software for research papers},
+  year = {2009},
+  owner = {Hugo},
+  timestamp = {2009.11.08},
+  url = {http://www.mendeley.com},
+  urlaccessdate = {8 de novembro de 2009}
+}
+
+@MISC{MiKTeX2009,
+  author = {MiKTeX},
+  title = {The MiK\TeX\ project},
+  year = {2009},
+  owner = {Hugo},
+  timestamp = {2009.11.08},
+  url = {http://www.miktex.org},
+  urlaccessdate = {8 de novembro de 2009}
+}
+
+@BOOK{Mittelbach2004,
+  title = {The \LaTeX\ companion},
+  publisher = {Addison-Wesley},
+  year = {2004},
+  author = {Mittelbach, Frank and Goossens, Michel and Braams, Johannes and Carlisle,
+	David and Rowley, Chris},
+  address = {Boston},
+  edition = {2},
+  owner = {Hugo},
+  timestamp = {2009.11.08}
+}
+
+@MISC{TeX-Br2009,
+  author = {TeX-BR},
+  title = {Comunidade \TeX-Br},
+  year = {2009},
+  owner = {Hugo},
+  timestamp = {2009.11.08},
+  url = {http://www.tex-br.org/index.php},
+  urlaccessdate = {8 de novembro de 2009}
+}
+
+@MISC{TeXnicCenter2009,
+  author = {TeXnicCenter},
+  title = {\TeX nicCenter: \normalfont the center of your \LaTeX\ universe},
+  year = {2009},
+  owner = {Hugo},
+  timestamp = {2009.11.08},
+  url = {http://www.texniccenter.org},
+  urlaccessdate = {8 de novembro de 2009}
+}
+
+@BOOK{UTFPR2008,
+  title = {Normas para elabora\c{c}\~ao de trabalhos acad\^emicos},
+  publisher = {Universidade Tecnol\'ogica Federal do Paran\'a},
+  year = {2008},
+  editor = {Reitoria},
+  author = {UTFPR},
+  address = {Curitiba},
+  owner = {Hugo},
+  timestamp = {2009.11.08}
+}
+
+@MISC{Wikibooks2009,
+  author = {Wikibooks},
+  title = {\LaTeX},
+  year = {2009},
+  owner = {Hugo},
+  timestamp = {2009.11.08},
+  url = {http://en.wikibooks.org/wiki/LaTeX},
+  urlaccessdate = {8 de novembro de 2009}
+}
+
+@book{Anderson1977,
+  author =       "Paul M. Anderson and A. A. Fouad",
+  title =        "Power System Control and Stability",
+  publisher =    "The Iowa State University Press",
+  address =      "Ames, USA",
+  year =         "1977",
+  pages =        "464",
+}
+
+
+@misc{ATmega8515:datasheet,
+  title         = "{ATmega8515} Data Sheet",
+  organization  = "Atmel Corporation",
+  address       = "2325 Orchard Parkway, San Jose, CA 95131",
+  year          ="2015"
+}
+
+
+@manual{NBR10520:2002,
+	Address = {Rio de Janeiro},
+	Date-Added = {2012-12-15 21:43:38 +0000},
+	Date-Modified = {2013-01-12 22:17:20 +0000},
+	Month = {ago.},
+	Org-Short = {ABNT},
+	Organization = {Associa{\c c}\~ao Brasileira de Normas T\'ecnicas},
+	Pages = 7,
+	Subtitle = {Informa{\c c}\~ao e documenta{\c c}\~ao --- Apresenta{\c c}\~ao de cita{\c c}\~oes em documentos},
+	Title = {{NBR} 10520},
+	Year = 2002}
+
+@manual{NBR14724:2001,
+	Address = {Rio de Janeiro},
+	Date-Added = {2012-12-15 20:34:08 +0000},
+	Date-Modified = {2012-12-15 20:34:08 +0000},
+	Month = {jul.},
+	Org-Short = {ABNT},
+	Organization = {Associa{\c c}\~ao Brasileira de Normas T\'ecnicas},
+	Pages = 6,
+	Subtitle = {Informa{\c c}\~ao e documenta{\c c}\~ao --- trabalhos acad\^emicos --- apresenta{\c c}\~ao},
+	Title = {{NBR} 14724},
+	Year = 2001}
+
+@manual{NBR14724:2011,
+	Address = {Rio de Janeiro},
+	Date-Added = {2012-12-15 20:34:08 +0000},
+	Date-Modified = {2012-12-15 20:35:25 +0000},
+	Month = {mar.},
+	Note = {Substitui a Ref.~\citeonline{NBR14724:2005}},
+	Org-Short = {ABNT},
+	Organization = {Associa{\c c}\~ao Brasileira de Normas T\'ecnicas},
+	Pages = 15,
+	Subtitle = {Informa{\c c}\~ao e documenta{\c c}\~ao --- trabalhos acad\^emicos --- apresenta{\c c}\~ao},
+	Title = {{NBR} 14724},
+	Year = 2011}
+
+@manual{NBR14724:2005,
+	Address = {Rio de Janeiro},
+	Date-Added = {2012-12-15 20:34:08 +0000},
+	Date-Modified = {2012-12-15 20:35:25 +0000},
+	Month = {dez.},
+	Org-Short = {ABNT},
+	Organization = {Associa{\c c}\~ao Brasileira de Normas T\'ecnicas},
+	Pages = 9,
+	Subtitle = {Informa{\c c}\~ao e documenta{\c c}\~ao --- trabalhos acad\^emicos --- apresenta{\c c}\~ao},
+	Title = {{NBR} 14724},
+	Year = 2005}

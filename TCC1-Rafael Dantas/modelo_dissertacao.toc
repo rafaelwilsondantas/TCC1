@@ -1,0 +1,35 @@
+\changetocdepth {4}
+\changetocdepth {50}
+\select@language {brazil}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {INTRODU\c C\~AO}}{8}{chapter.1}
+\contentsline {section}{\numberline {1.1}PROBLEMA}{8}{section.1.1}
+\contentsline {section}{\numberline {1.2}JUSTIFICATIVA}{8}{section.1.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {CLASSSIFICA\c C\~AO}}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Teorema de Bayes}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}Redes Bayesianas}{10}{section.2.2}
+\contentsline {section}{\numberline {2.3}Classificadores Bayesianos}{10}{section.2.3}
+\contentsline {section}{\numberline {2.4}K-Dependence Bayesian Classifier (KDBC)}{11}{section.2.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Otimiza\c c\~ao por col\^onia de formigas}}{12}{chapter.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {ALGORITMOS EVOLUCION\'ARIOS}}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}ALGORITMOS GEN\'ETICOS}{13}{section.4.1}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {PROPOSTA}}{14}{chapter.5}
+\contentsline {section}{\numberline {5.1}METODOLOGIA DE PESQUISA}{14}{section.5.1}
+\contentsline {section}{\numberline {5.2}TRABALHOS RELACIONADOS}{14}{section.5.2}
+\contentsline {section}{\numberline {5.3}ATIVIDADES PLANEJADAS}{14}{section.5.3}
+\contentsline {section}{\numberline {5.4}CRONOMAGRAMA PLANEJADO}{14}{section.5.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {CONSIDERA\c C\~OES FINAIS}}{16}{chapter.6}
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{17}{section*.20}

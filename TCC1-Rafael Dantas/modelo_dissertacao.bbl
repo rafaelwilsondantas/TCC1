@@ -1,0 +1,94 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.5 }
+
+\bibitem[Blum 2005]{BlUM2005}
+\abntrefinfo{Blum}{BLUM}{2005}
+{BLUM, Christian. \textbf{Ant colony optimization: Introduction and recent
+  trends}. 2005.}
+
+\bibitem[Cooper 1990]{COOPER1990}
+\abntrefinfo{Cooper}{COOPER}{1990}
+{COOPER, Gregory~F. The computational complexity of probabilistic inference
+  using bayesian belief networks (research note).
+\textbf{Artif. Intell.}, Elsevier Science Publishers Ltd., Essex, UK, v.~42,
+  n.~2-3, p. 393--405, mar. 1990.
+ISSN 0004-3702.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1016/0004-3702(90)90060-D}.}
+
+\bibitem[Dorigo e Blum 2005]{DORIGO2005}
+\abntrefinfo{Dorigo e Blum}{DORIGO; BLUM}{2005}
+{DORIGO, Marco; BLUM, Christian. Ant colony optimization theory: A survey.
+\textbf{Theoretical Computer Science}, v.~344, n.~2, p. 243 -- 278, 2005.
+ISSN 0304-3975.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0304397505003798}.}
+
+\bibitem[Dorigo, Maniezzo e Colorni 1996]{DORIGO1996}
+\abntrefinfo{Dorigo, Maniezzo e Colorni}{DORIGO; MANIEZZO; COLORNI}{1996}
+{DORIGO, M.; MANIEZZO, V.; COLORNI, A. Ant system: optimization by a colony of
+  cooperating agents.
+\textbf{IEEE Transactions on Systems, Man, and Cybernetics, Part B
+  (Cybernetics)}, v.~26, n.~1, p. 29--41, Feb 1996.
+ISSN 1083-4419.}
+
+\bibitem[Dr{\'e}o e Siarry 2002]{DREO2002}
+\abntrefinfo{Dr{\'e}o e Siarry}{DR{\'E}O; SIARRY}{2002}
+{DR{\'E}O, Johann; SIARRY, Patrick. A new ant colony algorithm using the
+  heterarchical concept aimed at optimization of multiminima continuous
+  functions.
+In:  \underline{\ \ \ \ \ \ \ \ }. \textbf{Ant Algorithms: Third International
+  Workshop, ANTS 2002 Brussels, Belgium, September 12--14, 2002 Proceedings}.
+  Berlin, Heidelberg: Springer Berlin Heidelberg, 2002. p. 216--221.
+ISBN 978-3-540-45724-4.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/3-540-45724-0\_18}.}
+
+\bibitem[Flores et al. 2011]{FLORES2011}
+\abntrefinfo{Flores et al.}{FLORES et al.}{2011}
+{FLORES, M.~Julia et al. Handling numeric attributes when comparing bayesian
+  network classifiers: does the discretization method matter?
+\textbf{Applied Intelligence}, v.~34, n.~3, p. 372--385, 2011.
+ISSN 1573-7497.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/s10489-011-0286-z}.}
+
+\bibitem[Friedman, Geiger e Goldszmidt 1997]{FRIEDMAN1997}
+\abntrefinfo{Friedman, Geiger e Goldszmidt}{FRIEDMAN; GEIGER; GOLDSZMIDT}{1997}
+{FRIEDMAN, Nir; GEIGER, Dan; GOLDSZMIDT, Moises. Bayesian network classifiers.
+\textbf{Machine Learning}, v.~29, n.~2, p. 131--163, 1997.
+ISSN 1573-0565.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1023/A:1007465528199}.}
+
+\bibitem[Jiang et al. 2007]{JIANG2007}
+\abntrefinfo{Jiang et al.}{JIANG et al.}{2007}
+{JIANG, Liangxiao et al. Survey of improving naive bayes for classification.
+In:  \underline{\ \ \ \ \ \ \ \ }. \textbf{Advanced Data Mining and
+  Applications: Third International Conference, ADMA 2007 Harbin, China, August
+  6-8, 2007. Proceedings}. Berlin, Heidelberg: Springer Berlin Heidelberg,
+  2007. p. 134--145.
+ISBN 978-3-540-73871-8.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/978-3-540-73871-8\_14}.}
+
+\bibitem[Linden 2008]{LINDEN2008}
+\abntrefinfo{Linden}{LINDEN}{2008}
+{LINDEN, Ricardo. \textbf{Algoritmos Gen\'eticos}: Uma importante ferramenta de
+  intelig\^encia computacional. S\~ao Paulo: Brasport, 2008.}
+
+\bibitem[Sebastiani, Abad e Ramoni 2010]{SEBASTIANI2010}
+\abntrefinfo{Sebastiani, Abad e Ramoni}{SEBASTIANI; ABAD; RAMONI}{2010}
+{SEBASTIANI, Paola; ABAD, Maria~M.; RAMONI, Marco~F. Bayesian networks.
+In:  \underline{\ \ \ \ \ \ \ \ }. \textbf{Data Mining and Knowledge Discovery
+  Handbook}. Boston, MA: Springer US, 2010. p. 175--208.
+ISBN 978-0-387-09823-4.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/978-0-387-09823-4\_10}.}
+
+\bibitem[Witten, Frank e Hall 2017]{WITTEN2017}
+\abntrefinfo{Witten, Frank e Hall}{WITTEN; FRANK; HALL}{2017}
+{WITTEN, Ian~H.; FRANK, Eibe; HALL, Mark~A. \textbf{Data Mining: Practical
+  Machine Learning Tools and Techniques}. 4rd. ed. San Francisco, CA, USA:
+  Morgan Kaufmann Publishers Inc., 2017.
+ISBN 0123748569, 9780123748560.}
+
+\end{thebibliography}

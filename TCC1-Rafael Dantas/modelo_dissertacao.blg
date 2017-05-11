@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: modelo_dissertacao.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: ./Referencias/referencias.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.5           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 18 entries,
+            6714 wiz_defined-function locations,
+            1312 strings with 12244 characters,
+and the built_in function-call counts, 19227 in all, are:
+= -- 2151
+> -- 404
+< -- 364
++ -- 538
+- -- 122
+* -- 1218
+:= -- 2368
+add.period$ -- 59
+call.type$ -- 19
+change.case$ -- 151
+chr.to.int$ -- 42
+cite$ -- 11
+duplicate$ -- 1591
+empty$ -- 1049
+format.name$ -- 565
+if$ -- 4187
+int.to.chr$ -- 6
+int.to.str$ -- 3
+missing$ -- 271
+newline$ -- 76
+num.names$ -- 55
+pop$ -- 311
+preamble$ -- 1
+purify$ -- 68
+quote$ -- 0
+skip$ -- 1821
+stack$ -- 1
+substring$ -- 835
+swap$ -- 613
+text.length$ -- 25
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 3
+warning$ -- 0
+while$ -- 95
+width$ -- 0
+write$ -- 204

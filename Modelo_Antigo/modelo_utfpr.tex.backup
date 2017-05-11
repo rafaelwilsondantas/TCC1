@@ -1,0 +1,209 @@
+%% Exemplo de utilizacao do estilo de formatacao normas-utf-tex (http://normas-utf-tex.sourceforge.net)
+%% Autores: Hugo Vieira Neto (hvieir@utfpr.edu.br)
+%%          Diogo Rosa Kuiaski (diogo.kuiaski@gmail.com)
+%% Colaboradores:
+%%          Cézar M. Vargas Benitez <cesarvargasb@gmail.com>
+%%          Marcos Talau <talau@users.sourceforge.net>
+
+%% Últimas Atualizações:
+%% Italo Macedo Laino, Engenharia de Computação (UTFPR-CP, 12/2015)
+%% Profa. Dra. Erica Ferreira de Souza (UTFPR-CP, 03/2016)
+
+\documentclass[openright]{normas-utf-tex} %openright = o capitulo comeca sempre em paginas impares
+%\documentclass[oneside]{normas-utf-tex} %oneside = para dissertacoes com numero de paginas menor que 100 (apenas frente da folha) 
+
+
+\usepackage[alf,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
+\usepackage{longtable}
+\usepackage[brazil]{babel} % pacote portugues brasileiro
+\usepackage[latin1]{inputenc} % pacote para acentuacao direta
+\usepackage{amsmath,amsfonts,amssymb} % pacote matematico
+\usepackage{graphicx} % pacote grafico
+\usepackage{times} % fonte times
+
+%Podem utilizar GEOMETRY{...} para realizar pequenos ajustes das margens. Onde, left=esquerda, right=direita, top=superior, bottom=inferior. P.ex.:
+%\geometry{left=3.0cm,right=1.5cm,top=4cm,bottom=1cm} 
+
+% ---------- Preambulo (OBRIGATÓRIO) ----------
+\instituicao{Universidade Tecnológica Federal do Paraná} % nome da instituicao
+\unidade{Câmpus Cornélio Procópio}
+\programa{Engenharia de Computação} % nome do curso
+\area{...} % [Engenharia Biom\'edica] ou [Inform\'atica Industrial] ou [Telem\'atica]
+\coordenacao{Programa de Graduação em Engenharia de Computação} %[Ex: Programa de Graduação em Engenharia de Computação] ou [Programa de Graduação em Engenharia de Software]
+\diretoria{Diretoria de Graduação e Educação Profissional}
+\departamento{Departamento de Computação}
+
+\documento{Trabalho de Conclusão de Curso} % [Disserta\c{c}\~ao] ou [Tese]
+\nivel{Graduação} % [Graduação] ou [Mestrado] ou [Doutorado]
+\titulacao{Bacharel} % [Tecnólogo] ou [Bacharel] ou [Engenheiro] ou [Mestre] ou [Doutor]
+
+\titulo{Construção de algoritmos bayesianos utilizando algoritmos evolutivos} % titulo do trabalho em portugues
+\title{Construction of Bayesian algorithms using evolutionary algorithms} % titulo do trabalho em ingles
+
+\autor{Rafael Wilson Dantas da Silva} % autor do trabalho
+\cita{SILVA, Rafael} % sobrenome (maiusculas), nome do autor do trabalho
+
+\palavraschave{Palavra-chave 1, Palavra-chave 2, XXXXXXX} % palavras-chave do trabalho
+\keywords{Keyword 1, Keyword 2, ...} % palavras-chave do trabalho em ingles
+
+\comentario{\UTFPRdocumentodata\ apresentada a \ABNTinstituicaodata\ como requisito parcial para obten\c{c}\~ao do grau de Bacharel em Engenharia de Computação}
+
+\orientador{Prof. Dr. Danilo Sipoli Sanches} % nome do orientador do trabalho
+%\orientador[Orientadora:]{Nome da Orientadora} % <- no caso de orientadora, usar esta sintaxe
+\coorientador{Prof. Dr. Carlos N. Silla Jr.} % nome do co-orientador do trabalho, caso exista
+%\coorientador[Co-orientadora:]{Nome da Co-orientadora} % <- no caso de co-orientadora, usar esta sintaxe
+%\coorientador[Co-orientadores:]{Nome do Co-orientador} % no caso de 2 co-orientadores, usar esta sintaxe
+%\coorientadorb{Nome do Co-orientador 2}	% este comando inclui o nome do 2o co-orientador
+
+            % % %  TERMO DE APROVAÇÃO  % % % % 
+            % % %  OBRIGATÓRIO PREENCHIMENTO % % % %
+\local{Cornélio Procópio} % cidade
+\data{\the\year} % ano automatico
+\localdia{Cornélio Procópio,  XX/XX/XXXX}
+
+%(OBRIGATÓRIO)
+\textoaprovacao{Este \UTFPRdocumentodata\ foi julgado adequado para obten\c c\~ao do T\'itulo de ``\UTFPRtitulacaodata\ em \UTFPRareadata'' e aprovado em sua forma final pelo \UTFPRcoordenacaodata\ da \ABNTinstituicaodata.}
+\primeiroassina{Prof. Dr. Danilo Sipoli Sanches\\ \ABNTinstituicaodata \\}
+\segundoassina{Prof. Titulação, Nome professor membro da banca \\ \ABNTinstituicaodata \\}
+\terceiroassina{Prof. Titulação, Nome professor membro da banca \\ \ABNTinstituicaodata \\}
+
+%---------- Inicio do Documento ----------
+\begin{document}
+
+\capa % geracao automatica da capa (OBRIGATÓRIO)
+\folhaderosto % geracao automatica da folha de rosto (OBRIGATÓRIO)
+\termodeaprovacao  % (OBRIGATÓRIO)
+
+% dedicatória (opcional)
+\begin{dedicatoria}
+Texto da dedicat\'oria.
+\end{dedicatoria}
+
+% agradecimentos (opcional)
+\begin{agradecimentos}
+Texto dos agradecimentos.
+\end{agradecimentos}
+
+% epigrafe (opcional)
+\begin{epigrafe}
+Texto da ep\'igrafe.
+\end{epigrafe}
+
+%resumo (OBRIGATÓRIO)
+\begin{resumo}
+Texto do resumo (m\'aximo de 500 palavras).
+\end{resumo}
+
+%abstract (OBRIGATÓRIO)
+\begin{abstract}
+Abstract ... (maximum of 500 words).
+\end{abstract}
+
+% listas (opcionais, mas recomenda-se a partir de 5 elementos)
+\listadefiguras % geracao automatica da lista de figuras
+\listadetabelas % geracao automatica da lista de tabelas
+\listadesiglas % geracao automatica da lista de siglas
+\listadesimbolos % geracao automatica da lista de simbolos
+
+% sumario (OBRIGATÓRIO)
+\sumario % geracao automatica do sumario
+
+%---------- Inicio do Texto ----------
+% recomenda-se a escrita de cada capitulo em um arquivo texto separado (exemplo: intro.tex, fund.tex, exper.tex, concl.tex, etc.) e a posterior inclusao dos mesmos no mestre do documento utilizando o comando \input{}, da seguinte forma:
+%\input{intro.tex}
+%\input{fund.tex}
+%\input{exper.tex}
+%\input{concl.tex}
+
+%---------- Introdução 
+%\include{./Capitulos/capitulo1} 
+%---------- Fundamentação 
+%\include{./Capitulos/capitulo2} 
+
+%\include{./Capitulos/capitulo3}
+%---------- Resultados
+%\include{./Capitulos/capitulo4} 
+%---------- Conclusão 
+%\include{./Capitulos/capitulo5} 
+
+\chapter{FUNDAMENTAÇÃO TEÓRICA}  
+
+
+\section{Teorema de Bayes} \label{teoremaBayes}
+
+\section{Classificadores Bayesianos}
+Os classificadores Bayesianos surgiram com base no Teorma de Bayses, que foi apresentado na seção \ref{teoremaBayes}. 
+Segundo XXXXX, por ser um classificador probabilístico simples, assumindo que todas as características são indepentes entre si, o classificador Naive Bayes é bastante utilizado e conhecido na mineração de dados.
+De acordo com XXXX, é uma abordagem confiável, pois para se obter uma estimação probabilística aceitável não é necessário o uso de um grande conjunto de treinamento.
+O algoritmo do classificador Naive Bayes funciona da seguinte forma:
+
+Dado um conjunto de treinamento(\simbolo{$Tr$}{Conjunto de treinamento}) com seus respectivos atributos e classes.
+O classificador Naive Bayes use o teorema de Bayes para classificar um novo exemplo de teste (\simbolo{$X$}{Exemplo de teste contendo um conjunto de atributos})
+
+
+\section{K-Dependence Bayesian Classifier (KDBC)} \label{kdbc}
+
+\chapter{Algoritmos Evolutivos}
+Algoritmos Evolutivos baseiam-se no processo de evolução natural para criar modelos computacionais na resolução de problemas.
+Há uma grande variedade de modelos computacionais propostos na literatura, porém todos eles tem em comum a aplicação dos conceitos de seleção, mutação e reprodução na simulação da evolução das espécies. 
+Estes processos dependem do desempenho dos indivíduos de cada espécie dentro do ambiente\cite{Linden2008}.
+
+\section{Algortimos Genéticos}
+Segunda \cite{Linden2008}, Algorimos Genéticos são eficientes em buscar, no espaço de soluções, soluções que sejam tão próximas da solução ótimo quanto possível e isso quase sempre sem a interação humana.
+Portanto os algoritmos Genéticos são uma técnica adequada para problemas especialmente difíceis, como os problemas denominados NP completos.
+
+
+\chapter{Problema}
+
+Como visto na seção \ref{kdbc} o possível número de modelos gerados pelo KDBC para a representação do classificador é determinado pela equação X. A equação cresce exponencialmente em função do número de atributos e do número de k-dependencias. 
+Assim, com o crescimento do número de atributos ou da exigência de um número maior de k-dependencias, gerar todos os modelos ou escolher o melhor modelo para o problema torna-se computacionalmente muito custoso.
+Segundo, encontrar a
+
+
+
+%---------- Referencias ----------
+\bibliography{./Referencias/reflatex} % % geracao automatica das referencias a partir do arquivo reflatex.bib
+
+%---------- Apendices (opcionais) ----------
+\apendice
+\chapter{Nome do Ap\^endice A}
+
+Use o comando {\ttfamily \textbackslash apendice} e depois comandos {\ttfamily \textbackslash chapter\{\}} para gerar t\'itulos de ap\^en-dices.
+
+%\apendice
+\chapter{Nome do Ap\^endice B}
+
+Use o comando {\ttfamily \textbackslash apendice} e depois comandos {\ttfamily \textbackslash chapter\{\}} para gerar t\'itulos de ap\^en-dices.
+
+% ---------- Anexos (opcionais) ----------
+\anexo
+\chapter{Nome do Anexo}
+Use o comando {\ttfamily \textbackslash anexo} e depois comandos {\ttfamily \textbackslash chapter\{\}} para gerar t\'itulos de anexos.
+
+% --------- Lista de siglas --------
+%\textbf{* Observa\c{c}\~oes:} a lista de siglas nao realiza a ordenacao das siglas em ordem alfabetica
+% Em breve isso sera implementado, enquanto isso:
+%\textbf{Sugest\~ao:} crie outro arquivo .tex para siglas e utilize o comando \sigla{sigla}{descri\c{c}\~ao}.
+%Para incluir este arquivo no final do arquivo, utilize o comando \input{arquivo.tex}.
+%Assim, Todas as siglas serao geradas na ultima pagina. Entao, devera excluir a ultima pagina da versao final do arquivo
+% PDF do seu documento.
+
+%-------- Citacoes ---------
+% - Utilize o comando \citeonline{...} para citacoes com o seguinte formato: Autor et al. (2011).
+% Este tipo de formato eh utilizado no comeco do paragrafo. P.ex.: \citeonline{autor2011}
+
+% - Utilize o comando \cite{...} para citacoeses no meio ou final do paragrafo. P.ex.: \cite{autor2011}
+
+%-------- Titulos com nomes cientificos (titulo, capitulos e secoes) ----------
+% Regra para escrita de nomes cientificos:
+% Os nomes devem ser escritos em italico, 
+%a primeira letra do primeiro nome deve ser em maiusculo e o restante em minusculo (inclusive a primeira letra do segundo nome).
+% VEJA os exemplos abaixo.
+% 
+% 1) voce nao quer que a secao fique com uppercase (caixa alta) automaticamente:
+%\section[nouppercase]{\MakeUppercase{Estudo dos efeitos da radiacao ultravioleta C e TFD em celulas de} {\textit{Saccharomyces boulardii}}
+%
+% 2) por padrao os cases (maiusculas/minuscula) sao ajustados automaticamente, voce nao precisa usar makeuppercase e afins.
+% \section{Introducao} % a introducao sera posta no texto como INTRODUCAO, automaticamente, como a norma indica.
+
+\end{document}

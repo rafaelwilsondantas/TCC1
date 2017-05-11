@@ -1,0 +1,481 @@
+%% Exemplo de Utilizacao do Estilo de formatacao utfprcptex2  (http: )
+%% para elaboração de Teses, Dissertações, etc...
+%% Autores: Rodrigo Rodrigues Sumar (sumar@utfpr.edu.br)
+%%          Bruno Augusto Angélico (bangelico@utfpr.edu.br)
+%% Colaboradores:
+%%
+%%
+\documentclass[oneside,       % para impressão somente na frante. Oposto a twoside
+               openright,     % capítulos começam em pág ímpar (insere página vazia caso preciso)
+               a4paper,       % tamanho do papel.
+               12pt,          % tamanho da fonte
+               english,		  % idioma adicional para hifenização
+%               french,		  % idioma adicional para hifenização
+               spanish,		  % idioma adicional para hifenização
+               brazil		  % o último idioma é o principal do documento
+              ]{utfprcptex2}
+
+
+% ------
+%%% Pacotes diversos
+% ------
+\usepackage[latin1]{inputenc} % pacote para acentuacao direta
+\usepackage{amsmath,amsfonts,amssymb,amsthm} % pacote matematico
+\usepackage{graphicx} % pacote grafico
+\usepackage[bottom]{footmisc}
+\usepackage{subfig}
+\usepackage{threeparttable}
+
+
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}				% para geração de dummy text
+% ---
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ambientes para definições, exemplos e teoremas
+\newtheorem{problema}{Problema}
+\newtheorem{definicao}{Definição}
+\newtheorem{proposicao}{Proposição}
+\newtheorem{teorema}{Teorema}[chapter]
+\newtheorem{lema}{Lema}
+\newtheorem{corolario}{Corolário}
+\newtheorem{exemplo}{Exemplo}
+\newtheorem*{observacao}{Observação}
+\newenvironment{prova}
+{\noindent {\textit{Demonstração}.}} {{\par\hfill$\Box$ \\}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Para fonte Times (Nimbus Roman) descomente linha abaixo
+%\fontetipo{times}
+
+% Para fonte Helvetica (Nimbus Sans) descomente linhas abaixo
+\fontetipo{arial}
+
+
+
+
+%O comando a seguir diz ao Latex para salvar as siglas em um arquivo separado:
+\fazlistasiglas[Lista de Siglas] % Parâmetro opcional é o título da lista.
+
+%%%% Ferramenta para criação de glossários
+\makeglossaries%% Não comente esta linha se estivar usando glossario
+\include{entradas_glossario}%% Entradas do glossário - Comente para remover este item
+%%%%
+
+% ---------- Preambulo ----------
+%%%%%%%% Dados para Capa e outros elementos pretextuais
+\instituicao{Universidade Tecnol\'ogica Federal do Paran\'a}
+\unidade{Câmpus Cornélio Procópio}
+\diretoria{Diretoria de Graduação e Educação Profissional}
+\coordenacao{Departamento de Computação}
+\curso{Engenharia de Computação}
+\documento{Trabalho de Conclusão de Curso}
+\nivel{Bacharelado}
+\titulacao{Bacharel}
+\area{Engenharia de Computação}
+\titulo{Construção de algoritmos bayesianos utilizando algoritmos evolutivos} % titulo do trabalho em português
+\title{Construction of Bayesian algorithms using evolutionary algorithms} % titulo do trabalho em inglês
+\autor{Rafael Wilson Dantas da Silva} % autor do trabalho
+\cita{SILVA, Rafael} % sobrenome (maiúsculas), nome do autor do trabalho
+
+\palavraschave{Palavra-chave 1. Palavra-chave 2. (entre 3 e 5 palavras)} % palavras-chave do trabalho - Devem ser inseridas de 3 a 5 palavras chave
+\keywords{Keyword 1. Keyword 2. (entre 3 e 5 palavras)} % palavras-chave do trabalho em inglês - Devem ser inseridas de 3 a 5 palavras chave
+\comentario{\UTFPRdocumentodata\ apresentada ao \UTFPRcoordenacaodata\ da \UTFPRinstituicaodata\ como requisito parcial para obten\c{c}\~ao do título de ``\UTFPRtitulacaodata\ em \UTFPRareadata''.}
+
+
+%%%%%%%%%% Dados de Orientador e Coorientador
+\orientador[Orientador]{Prof. Dr.}{Danilo Sipoli Sanches} % nome do orientador do trabalho
+%\orientador[Orientadora:]{Nome da Orientadora} % <- no caso de orientadora, usar esta sintaxe
+\coorientador{Prof. Dr.}{Carlos Nascimento Silla Jr.} % nome do co-orientador do trabalho, caso exista
+%\coorientador[Co-orientadora]{Profa. Dra.}{Nome da Co-orientadora} % <- no caso de co-orientadora, usar esta sintaxe
+%\coorientador[Co-orientadores:]{Nome do Co-orientador} % no caso de 2 co-orientadores, usar esta sintaxe
+%\coorientadorb{}	% este comando inclui o nome do 2o co-orientador
+
+\coordenadorUTFPR[Coordenadora]{Grau}{Nome do coordenador} % Coordenador do PPGEEL
+\local{Cornélio Procópio} % cidade
+\data{\UTFPRanodefesa} % Aqui deve ir o ano da defesa.
+
+%%%% Dados para Folha de Aprovação%
+\textoaprovacao{Esta \UTFPRdocumentodata\ foi julgada adequada para obten\c c\~ao do T\'itulo de ``\UTFPRtitulacaodata\ em \UTFPRareadata'' e aprovado em sua forma final pelo \UTFPRcoordenacaodata\ da \UTFPRinstituicaodata.}
+\numerodemembrosnabanca{5} % Isso decide se a lista de assinaturas será colocada em duas colunas
+\orientadornabanca{sim} % Se faz parte da banca definir como sim
+\coorientadornabanca{sim} % Se faz parte da banca definir como sim
+\primeiroassina[Título \\ Universidade]{Primeiro Membro da Banca}
+\segundoassina[Título \\Universidade]{Segundo Membro da Banca}
+\terceiroassina[Título \\Universidade]{Terceiro Membro da Banca}
+%\quartoassina[Título \\Universidade]{Quarto Membro da Banca}
+%\quintoassina[Título \\Universidade]{Quinto Membro da Banca}
+%\sextoassina[Título \\Universidade]{Sexto Membro da Banca}
+%\setimoassina[Título \\Universidade]{Sétimo Membro da Banca}
+\datadefesaUTFPR{24}{05}{2017} %% A data deve ser inserida no formato dd/mm/aaaa
+%%%%% Comentar para versao impressa
+\versaoeletronica{``A Folha de Aprovação assinada encontra-se na Coordenação do Curso do Programa''}% Texto a ser inserido na versão eletronica do documento.
+
+%---------- Inicio do Documento ----------
+\begin{document}
+%\hypersetup{pageanchor=false}
+\capa % geração automática da capa
+\pretextual
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Geracao automatica da folha de rosto
+%%%% Opções da Folha de Rosto
+%%%%    - semficha
+%%%%    - comficha: modelo definido pela classe. Serve para contar paginas na
+%%%%                geração da ficha pela biblioteca.
+%%%%    - pdf: informar o nome do arquivo pdf com a ficha fornecinada
+%%%%           pela bibliteca.
+\folhaderosto
+
+
+%\termodeaprovacao % <- ainda a ser implementado corretamente
+
+%%% Errata
+%\include{errata}
+%%%
+
+%%%%% dedicatória (opcional)
+%\begin{dedicatoria}
+%Texto da dedicat\'oria.
+%\end{dedicatoria}
+
+%%%%%% agradecimentos (opcional)
+%\begin{agradecimentos}
+%Texto dos agradecimentos.
+%\end{agradecimentos}
+
+%%%%% epigrafe (opcional)
+%\begin{epigrafe}
+%Texto da ep\'igrafe.
+%\end{epigrafe}
+
+%%%%% resumo
+\begin{resumo}
+Texto do resumo (m\'aximo de 500 palavras).
+\end{resumo}
+%
+%%%%% abstract em ingles
+\begin{abstract}
+SOBRENOME, Nome. \textbf{\UTFPRtitledata.} \UTFPRanodefesa. \pageref{LastPage} f. Master Thesis -- Electrical Engineering Graduate Program, Federal University of Technology - Paraná. Cornélio Procópio, \UTFPRdatadata.
+
+This is the english abstract. (maximum of 500 words).
+
+\textbf{Keywords:} \UTFPRkeywordsdata
+\end{abstract}
+
+%%%%% abstract em frances
+%\begin{resume}
+%SOBRENOME, Nome. \textbf{Titre Français.} \UTFPRanodefesa. \pageref{LastPage} f. Mémoire de Maîtrise -- Programme d'études Supérieures en Génie Électrique, Université Technologique Fédérale - Paraná. Cornélio Procópio, \UTFPRdatadata.
+
+%Il s'agit d'un résumé en français. (maximum de 500 mots).
+
+%\textbf{Mots-clés:} mot-clé 1. mot-clé 2. (3 à 5 mots)
+%\end{resume}
+
+%%%%%% Lista de Ilustrações conforme ABNT
+%\listadeilustracoes
+%%% Para Gera lista individuais de comentar o comando acima e
+%%% descomentar das listas individuais
+%%%%%%%%%%%
+%%%% listas (opcionais, mas recomenda-se a partir de 5 elementos)
+%%%%
+\listadefiguras % geração automática da lista de figuras
+%\listadetabelas % geração automática da lista de tabelas
+%\listadequadros % geração automática da lista de quadros
+%\listadegraficos % geração automática da lista de gráficos
+%\listadefotos % geração automática da lista de fotos
+%\listadefluxogramas % geração automática da lista de fluxogramas
+\listadesiglas  % geração automática da lista de siglas
+%\listadeabreviaturas  % geração automática da lista de abreviaturas
+%\listadeacronimos   % geração automática da lista de acrônimos
+%\listadesimbolos % geração automática da lista de símbolos
+
+%\listofalgorithms %%%%% EM FASE DE TESTES
+
+% sumario
+\sumario % geração automática do sumario
+
+%\cleardoublepage
+%\hypersetup{pageanchor=true}
+\textual
+
+%---------- Inicio do Texto ----------
+\chapter{INTRODUÇÃO} 	
+Nos tempos atuais estamos sobrecarregados de dados. A quantidade de dados no mundo e em nossas vidas tende a crescer cada vez mais e não há nenhum sinal de que esta estimativa reduza. 
+Os computadores atuais tornam o processo de armazenamento de dados muito simples para descartarmos qualquer que seja o dado produzido no cotidiano de nossos dias.
+Há uma grande diferença entre a quantidade de dados que produzimos e a quantidade de informação que conseguimos retirar dela \cite{WITTEN2017}. 
+
+Mineração de dados é sobre resolver problemas por meio da análise de dados já presentes na base de dados e um dos seus objetivos é a descoberta de conhecimento através de técnicas computacionais, que são capazes de explorar um grande conjunto de dados evidenciando padrões e auxiliando na descoberta de conhecimento. Este desenfreado crescimento de base de dados, traz a mineração de dados para o primeiro plano das novas tecnologias \cite{WITTEN2017}. 
+
+A contrução de um classificador é uma tarefa básica na analise de dados e reconhecimento de padrões na Mineração de Dados. Simplificadamente, um classificador é uma função que assemelha com base em um conjunto de atributos um valor ao rotulo da classe \cite{FRIEDMAN1997}.
+
+As Redes Bayesianas (serão explicadas na seção \ref{redesBayesianas}) tem se destacado como uma das abordagens mais promissoras no processo de descoberta de conhecimento em base de dados e uma das suas implementações mais conhecidas é o classificador \sigla{NB}{\textit{Naive Bayes}}\cite{SEBASTIANI2010}.
+O Naive Bayes é um classificador probabilistisco e tem como principal pressuposto a independência entre seus atributos. 
+
+\section{PROBLEMA}
+No situações reais a independência de atributos é irreal. Diante da limitação de independência entre os atributos, diversos trabalhos foram realizados sobre possíveis modificações na estrutura do NB. Um dos metódos de melhoria dos resultados obtidos pelo NB é extenção da estrutura do classificador, que consiste na represntação de  dependências entre os atributos \cite{JIANG2007}.
+
+Uma forma de extensão dos classificadores Bayesianos foi apresentada por Sahami (1996), a fim de lidar com as suposições de independência entre os atributos do NB, onde ele introduz o termo \sigla{KDBC}{\textit{K-Dependence Bayesians Classifier} }, onde o valor $K$ representa o número máximo de nós pais que um atributo pode ter além da classe. Dessa forma um 0-KDBC seria o equivalente a um Naive Bayes \cite{FLORES2011}.
+
+Em \cite{COOPER1990} foi provado que tentar encontrar a melhor rede bayesiana gerada pelo KDBC é um problema que se encontra no domínio dos NP-Completos, ou seja, é inviável computacionalmente tentar encontrar a melhor solução. 
+
+\section{JUSTIFICATIVA}
+
+
+
+
+
+
+
+\chapter{CLASSSIFICAÇÃO} 
+\section{Teorema de Bayes} \label{teoremaBayes}
+
+Se $A$, $B$ e $C$ são evento, a probabilidade de que estes eventos ocorram, $P(A)$, $P(B)$ e $P(C)$ respectivamente, pode ser representada por um número real entre 0 e 1. 
+
+A probabilidade de que um evento está ligada diretamente a quantidade de vezes em que ele ocorre em relação a quantidade de vezes em que um experimento é realizado.
+Logo, se um evento $E$ ocorre $N$ vezes em um experimento realizado $M$ vezes, então temos que $P(E) = M/N$.
+
+Para entender melhor o Teorema de Bayes que será explicado neste capitulo considere as seguintes definições:
+
+\begin{itemize}
+\item Eventos mutualmente exclusivos
+
+Eventos mutualemente exclusivos são eventos que não podem ocorrer ao mesmo tempo. Se $E$ e $F$ são mutualmente exclusivos, então a probabilidade da união entre eles é dada pela seguinte equação: 
+\begin{equation}
+  P (E \cup F) = P(E) + P(F)
+\label{eq:mutualmenteExclusivos}
+\end{equation}
+
+Da mesma forma podemos ter eventos que não sejam mutualmente exclusivos, ou seja, podem ocorrer ao mesmo tempo. Neste caso eles são representados pela seguinte equação:
+\begin{equation}
+  P (E \cup F) = P(E) + P(F) - P(E \cap F)
+\label{eq:naoMutualmenteExclusivos}
+\end{equation}
+
+Onde, $P (E \cap F)$ é a verificação de que os eventos sejam independentes, definida pela equação \ref{eq:interseccao}: 
+
+\begin{equation}
+  P (E \cap F) = P(E) \ast P(F)
+\label{eq:interseccao}
+\end{equation}
+
+\item Probabilidade Condicional
+
+A probabilidade condicional é a probabilidade de um evento $E$ ocorrer em função da ocorrência de outro evento $F$. A sua representação é dado por $P(E|F)$ e é lida como ``a probabilidade de E, dado que F é verdadeiro''.
+Uma das formas de calcular a  probabilidade condicional entre os eventos $E$ e $F$ é dada pela seguinte equação:
+
+\begin{equation}
+  P (E | F) = \frac{P(E \cap F)}{P(F)}
+\label{eq:PEF}
+\end{equation}
+
+E da mesma forma para calcularmos $P(F|E)$, temos: 
+
+\begin{equation}
+  P (F | E) = \frac{P(E \cap F)}{P(E)}
+\label{eq:PFE}
+\end{equation}
+
+\item Regra do Produto de Probabilidades
+
+Se aplicarmos a multiplicação cruzada nas equações \ref{eq:PEF} e \ref{eq:PFE}, obtemos a seguinte equação:
+
+\begin{equation}
+  P (E \cap F) = P(E|F) \ast P(F) = P(F|E) \ast P(E) 
+\label{eq:PEcapF}
+\end{equation}
+
+\end{itemize}
+
+Manipulando a Equação 6, igualando os dois termos equivalentes à direita, e rearran-
+jando obtêm-se o
+Dadas as considerações das a cima, manipulando os dois termos mais a direita da  equação \ref{eq:PEcapF} chegamos enfimm na equação do \textbf{Teorema de Bayes} como pode ser visto a seguir:
+\begin{equation}
+  P (E|F) = \frac{P(F|E) \ast P(E)}{P(F)}
+\label{eq:teoremaBayes}
+\end{equation}
+
+Com base no Teorema de Bayes surgiram os classificadores Bayesianos que serão explicados nas seções \ref{redesBayesianas} e \ref{classificadoresBayesianos}.
+
+\section{Redes Bayesianas} \label{redesBayesianas}
+Segundo \cite{SEBASTIANI2010}, atualmente as redes Bayesianos são uma das abordagens mais promissoras para o processo de descoberta do conhecimento.
+
+As redes bayesianas pertecencem a uma classe mais geral de modelos chamados de modelos probabilísticos gráficos que surgiram da combinação da teoria de grafos e da teoria da probabilidade.
+O seu sucesso se deve a sua capacidade de lidar com modelos probabilísticos complexos atravéz da decomposição em componentes menores e acessiveis.
+Um modelo probabilístico gráfico é definido por uma grafo onde os nós representam variáveis estocasticas e os arcos representam as dependências entre tais variáveis. 
+Esses arcos são marcos pela probabilidade de distribuição de interação entre as variáveis vinculadas\cite{SEBASTIANI2010}. 
+
+Uma rede Bayesiana é um modelo gráfico probabilístico onde o grafo conectando suas variáveis é um Grafo Acíclico Dirigido ( do inglês, DAG - \textit{Directed Acyclic Graph}). 
+Este grafo gerado representa suposições de independência condicional entre os atributos que são usados para fatorar a distribuição de probabilidade conjunta das variáveis da rede. 
+Assim o processo de aprendizagem em bancos de dados, com grandes quantidades de dados torna-se possível.\cite{SEBASTIANI2010} .
+
+
+\section{Classificadores Bayesianos} \label{classificadoresBayesianos}
+
+
+Um dos classificadores bayesianos mais conhecidos é o Naive Bayes (NB). Este classificador aprende do conjunto de treinamento a probabilidade condicional de cada atributo $A$ devida ao rótulo da classe $C$.
+A classificação é feito então aplicando o teorema de Bayes para calcular a probabilidade da classe $C$, dada a instância de $A_1$,..., $A_n$ e então prediz a classe com a maior probabilidade a posteriori.
+Este cálculo é baseado em uma suposição de independência onde os atributos $A_i$ são condicionalmente independentes dado o valor da classe $C$ \cite{FRIEDMAN1997}.
+
+Quando representado por uma rede Bayesiana a estrutura do NB pode ser visto na figura \ref{fig:naiveBayes}. Essa rede consegue representar o principal pressuposto por trás do classificador NB, de que os atributos são independentes entre si e dependem apenas da classe.
+
+Naive Bayes é um dos mais efeivos classificadores, levando em conta o seu desempenho, atualmente. O desempenho do NB é surpreendente dado que a suposição de independência entre os atributos é quase sempre irreal \cite{FRIEDMAN1997}.
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{Figuras/figura_BN}
+	\caption[Estrutura da rede do Naive Bayes]{Estrutura da rede do Naive Bayes}
+	\fonte{\cite{FRIEDMAN1997}.}
+	\label{fig:naiveBayes}
+\end{figure}
+
+
+
+
+\section{K-Dependence Bayesian Classifier (KDBC)} \label{kdbc}
+
+
+
+\chapter{Otimização por colônia de formigas}
+Introduzido por Marico Dorigo e colegas no começos dos anos de 1990 \cite{DORIGO1996}\cite{DORIGO2005}, o \sigla{ACO}{Ant Colony Optimization}(em português, Otimização por Colônia de Formigas ou Otimização Colônia de Formigas) é baseado no comportamento das formigas ao se organizarem para encontrar o melhor percurso entre dois pontos, como por exemplo o lugar onde buscam comida e o ninho.
+
+Inicialmente as formigas percorrem a área em busca de comida de forma randômica. 
+Enquanto se movem as formigas deixam pelo caminho um rastro de ferômonio, que pode ser percebido pelas outras formigas. 
+Quando a formiga encontra uma fonte de alimento, ela avalia a qualidade e quantidade do alimento e carrega o alimento de volta ao ninho. 
+No caminho de retorno o feromônio produzido pela formiga pode depender da qualidade e da quantidade de comida encontrada e como a formiga que encontrou o melhor caminho retornará antes, o rastro deixado por ela será mais forte. Probabilisticamente as formigas tendem a seguir o caminhos com grandes quantidades de feromônio. Assim as outras formigas serão guiadas pelo melhor caminho \cite{DREO2002} \cite{BlUM2005}.
+A demonstração do problema pode ser visto na figura ~\ref{fig:aco} .
+
+
+\begin{figure}[!htb]
+ % \captionsetup{width=\textwidth}
+  
+  \begin{center}
+  \mbox{%
+    \subfloat[Demonstração do ambiente. Dois caminhos possíveis a serem percorridos entre dois pontos.]{
+    \includegraphics[width=.5\linewidth]{./Figuras/figura1a}
+    \label{fig:figACOa}
+    }
+    \subfloat[Probabilisticamente no início, 50\% das formigas vão pelo menor caminho(circulos) e 50\% das formigas vão pelo maior caminho(quadrados).]{
+    \includegraphics[width=.5\linewidth]{./Figuras/figura1b}
+    \label{fig:figACOb}
+    }
+    
+  }
+       \mbox{%
+    \subfloat[][As formigas que pegaram o menor caminho chegam antes a comida. A probabilidade delas retornarem pelo mesmo caminho é alta.]{
+    \includegraphics[width=.5\linewidth]{./Figuras/figura1c}
+    \label{fig:figACOc}
+    }
+    \subfloat[][O feromônio espalhado pelo menor caminho tem probabilidade de ser mais forte, assim as outras formigas também escolhem este caminho.]{
+    \includegraphics[width=.5\linewidth]{./Figuras/figura1d}
+    \label{fig:figACOd}
+    }
+       }
+  \end{center}
+  \label{fig:aco}
+  \caption{Demonstração da capacidade da colonia de formigas em encontrar o melhor caminho entre dois pontos\textit{Nest} e \textit{Food}}
+  \fonte{\cite{BlUM2005}}
+\end{figure}
+
+
+
+
+
+\chapter{ALGORITMOS EVOLUCIONÁRIOS}
+Algoritmos Evolucionários baseiam-se no processo de evolução natural proposto por Charles Darwvin (1850) para criar modelos computacionais na resolução de problemas.
+Processo este que mantem uma populão de individuos ou cromossomos que se comporta de forma semelhante à evolução das espécies.Cada indivíduo recebe uma avaliação que é quantificada em relação a solução do problema em questão, para então ser aplicado os operadores genéticos de forma a  simular a sobrevivência dos indivíduos no meio \cite{LINDEN2008}.
+
+Há uma grande variedade de modelos computacionais propostos na literatura, porém a grande maioria deles tem em comum a aplicação dos conceitos de seleção, mutação e reprodução na simulação da evolução das espécies. 
+Estes processos dependem do desempenho dos indivíduos de cada espécie dentro do ambiente \cite{LINDEN2008}.
+
+
+\section{ALGORITMOS GENÉTICOS}
+Os algortimos Genéticos são técnicas heuristicas de otimização global. 
+Algoritmos Genéticos são eficientes em buscar, no espaço das soluções, as que sejam tão próximas da solução ótimo quanto possível e isso quase sempre sem a interação humana.
+Portanto os algoritmos Genéticos são uma técnica adequada para problemas especialmente difíceis, como os problemas denominados NP completos \cite{LINDEN2008}.
+
+\chapter{PROPOSTA}
+
+\section{METODOLOGIA DE PESQUISA}
+
+\section{TRABALHOS RELACIONADOS}
+
+\section{ATIVIDADES PLANEJADAS}
+
+\section{CRONOMAGRAMA PLANEJADO}
+\begin{table}[!ht]
+	\centering
+	\caption{Cronograma das atividades}
+	\label{tab:cronograma}
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+		\multirow{2}{*}{\textbf{Atividades}} & \multicolumn{9}{c|}{\textbf{Meses}}                                                                                                  \\ \cline{2-10} 
+		& \textbf{Mar} & \textbf{Abr} & \textbf{Mai} & \textbf{Jun} & \textbf{Jul} & \textbf{Ago} & \textbf{Set} & \textbf{Out} & \textbf{Nov} \\ \hline
+		\textbf{1}                           & \cellcolor{green}            &              &              &              &              &              &              &              &              \\ \hline
+		\textbf{2}                           & x            & x            & x            &              &              &              &              &              &              \\ \hline
+		\textbf{3}                           & x            & x            & x            &              &              &              &              &              &              \\ \hline
+		\textbf{4}                           & x            & x            & x            &              &              &              &              &              &              \\ \hline
+		\textbf{5}                           & x            & x            & x            &              &              &              &              &              &              \\ \hline
+		\textbf{6}                           & x            & x            & x            &              &              &              &              &              &              \\ \hline
+		\textbf{7}                           &              & x            & x            &              &              &              &              &              &              \\ \hline
+		\textbf{8}                           &              &              &              & x            & x            &              &              &              &              \\ \hline
+		\textbf{9}                           &              &              &              & x            & x            &              &              &              &              \\ \hline
+		\textbf{10}                          &              &              &              &              & x            & x            &              &              &              \\ \hline
+		\textbf{11}                          &              &              &              &              &              &              & x            & x            &              \\ \hline
+		\textbf{12}                          &              &              &              &              & x            & x            & x            & x            & x            \\ \hline
+	\end{tabular}
+\end{table}
+
+
+\chapter{CONSIDERAÇÕES FINAIS}
+
+
+
+% recomenda-se a escrita de cada capitulo em um arquivo texto separado (exemplo: intro.tex, fund.tex, exper.tex, concl.tex, etc.) e a posterior inclusao dos mesmos no mestre do documento utilizando o comando \input{}, da seguinte forma:
+%\input{capitulo1/cap1.tex}
+%\input{capitulo2/cap2.tex}
+%\input{capitulo3/cap3.tex}
+
+
+%% Formatação de páginas de elementos pós-textuais
+\postextual%% Não comente esta linha
+%---------- Referencias ----------
+\bibliography{./Referencias/referencias} % geracao automatica das referencias a partir do arquivo reflatex.bib
+
+%% Glossário
+%\incluirglossario%% Comente para remover este item
+
+%---------- Apendices (opcionais) ----------
+%\apendices
+% Imprime uma página indicando o início dos apêndices
+%\partapendices*
+
+%\chapter{Nome do Ap\^endice}
+
+%Use o comando {\ttfamily \textbackslash apendice} e depois comandos {\ttfamily \textbackslash chapter\{\}}
+%para gerar t\'itulos de ap\^en-dices.
+
+%\section{Teste de Seção em um Apêndice}
+
+% ---------- Anexos (opcionais) ----------
+%\anexos
+% Imprime uma página indicando o início dos anexos
+%\partanexos*
+
+
+
+%\chapter{Nome do Anexo}
+
+%\index{Use} Use o comando {\ttfamily \textbackslash anexo} e depois comandos {\ttfamily \textbackslash chapter\{\}}
+%para gerar t\'itulos de anexos.
+
+%---------------------------------------------------------------------
+% INDICE REMISSIVO
+%---------------------------------------------------------------------
+%\onecolindex %% Para indice em uma coluna
+\twocolindex  %% Para indice em duas colunas
+\indiceremissivo
+%---------------------------------------------------------------------
+
+\end{document} 
