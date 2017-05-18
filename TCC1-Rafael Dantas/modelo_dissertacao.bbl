@@ -10,6 +10,13 @@
 {BLUM, Christian. \textbf{Ant colony optimization: Introduction and recent
   trends}. 2005.}
 
+\bibitem[Campello e MACULAN 1994]{CAMPELLO1994}
+\abntrefinfo{Campello e MACULAN}{CAMPELLO; MACULAN}{1994}
+{CAMPELLO, R.E.; MACULAN, N. \textbf{Algoritmos e heuristicas: desenvolvimento
+  e avaliacao de performance}. EDUFF, 1994.
+ISBN 9788522801343. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?id=oUOBPgAACAAJ}.}
+
 \bibitem[Cooper 1990]{COOPER1990}
 \abntrefinfo{Cooper}{COOPER}{1990}
 {COOPER, Gregory~F. The computational complexity of probabilistic inference
@@ -35,6 +42,12 @@ Dispon{\'\i}vel em:
   (Cybernetics)}, v.~26, n.~1, p. 29--41, Feb 1996.
 ISSN 1083-4419.}
 
+\bibitem[Dougherty 2012]{DOUGHERTY2012}
+\abntrefinfo{Dougherty}{DOUGHERTY}{2012}
+{DOUGHERTY, Geoff. \textbf{Pattern Recognition and Classification: An
+  Introduction}. [S.l.]: Springer Publishing Company, Incorporated, 2012.
+ISBN 1461453224, 9781461453222.}
+
 \bibitem[Dr{\'e}o e Siarry 2002]{DREO2002}
 \abntrefinfo{Dr{\'e}o e Siarry}{DR{\'E}O; SIARRY}{2002}
 {DR{\'E}O, Johann; SIARRY, Patrick. A new ant colony algorithm using the
@@ -45,6 +58,13 @@ In:  \underline{\ \ \ \ \ \ \ \ }. \textbf{Ant Algorithms: Third International
   Berlin, Heidelberg: Springer Berlin Heidelberg, 2002. p. 216--221.
 ISBN 978-3-540-45724-4.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/3-540-45724-0\_18}.}
+
+\bibitem[Feo e Resende 1995]{FEO1995}
+\abntrefinfo{Feo e Resende}{FEO; RESENDE}{1995}
+{FEO, Thomas~A.; RESENDE, Mauricio G.~C. Greedy randomized adaptive search
+  procedures.
+\textbf{Journal of Global Optimization}, v.~6, n.~2, p. 109--133, 1995.
+ISSN 1573-2916.}
 
 \bibitem[Flores et al. 2011]{FLORES2011}
 \abntrefinfo{Flores et al.}{FLORES et al.}{2011}
@@ -61,6 +81,12 @@ Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/s10489-011-0286-z}.}
 ISSN 1573-0565.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1023/A:1007465528199}.}
 
+\bibitem[Hirsch et al. 2007]{HIRSCH2007}
+\abntrefinfo{Hirsch et al.}{HIRSCH et al.}{2007}
+{HIRSCH, M.~J. et al. Global optimization by continuous grasp.
+\textbf{Optimization Letters}, v.~1, n.~2, p. 201--212, 2007.
+ISSN 1862-4480.}
+
 \bibitem[Jiang et al. 2007]{JIANG2007}
 \abntrefinfo{Jiang et al.}{JIANG et al.}{2007}
 {JIANG, Liangxiao et al. Survey of improving naive bayes for classification.
@@ -71,10 +97,52 @@ In:  \underline{\ \ \ \ \ \ \ \ }. \textbf{Advanced Data Mining and
 ISBN 978-3-540-73871-8.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/978-3-540-73871-8\_14}.}
 
+\bibitem[Laarhoven e Aarts 1987]{VANLAARHOVEN1987}
+\abntrefinfo{Laarhoven e Aarts}{LAARHOVEN; AARTS}{1987}
+{LAARHOVEN, Peter J.~M. van; AARTS, Emile H.~L. Simulated annealing.
+In:  \underline{\ \ \ \ \ \ \ \ }. \textbf{Simulated Annealing: Theory and
+  Applications}. Dordrecht: Springer Netherlands, 1987. p. 7--15.
+ISBN 978-94-015-7744-1.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/978-94-015-7744-1\_2}.}
+
+\bibitem[Larrannaga et al. 2013]{LARRANAGA2013}
+\abntrefinfo{Larrannaga et al.}{LARRANNAGA et al.}{2013}
+{LARRANNAGA, Pedro et al. A review on evolutionary algorithms in bayesian
+  network learning and inference tasks.
+\textbf{Information Sciences}, v.~233, p. 109 -- 125, 2013.
+ISSN 0020-0255.
+Dispon{\'\i}vel em:
+  \url{http://www.sciencedirect.com/science/article/pii/S0020025513000443}.}
+
 \bibitem[Linden 2008]{LINDEN2008}
 \abntrefinfo{Linden}{LINDEN}{2008}
 {LINDEN, Ricardo. \textbf{Algoritmos Gen\'eticos}: Uma importante ferramenta de
   intelig\^encia computacional. S\~ao Paulo: Brasport, 2008.}
+
+\bibitem[Mladenovi\'{c} e Hansen 1997]{MLADENOVIC1997}
+\abntrefinfo{Mladenovi\'{c} e Hansen}{MLADENOVI\'{c}; HANSEN}{1997}
+{MLADENOVI\'{c}, N.; HANSEN, P. Variable neighborhood search.
+\textbf{Comput. Oper. Res.}, Elsevier Science Ltd., Oxford, UK, UK, v.~24,
+  n.~11, p. 1097--1100, nov. 1997.
+ISSN 0305-0548.}
+
+\bibitem[Pena, Lozano e Larranaga 2004]{PENA2004}
+\abntrefinfo{Pena, Lozano e Larranaga}{PENA; LOZANO; LARRANAGA}{2004}
+{PENA, J.~M.; LOZANO, J.~A.; LARRANAGA, P. Unsupervised learning of bayesian
+  networks via estimation of distribution algorithms: An application to gene
+  expression data clustering.
+\textbf{Int. J. Uncertain. Fuzziness Knowl.-Based Syst.}, World Scientific
+  Publishing Co., Inc., River Edge, NJ, USA, v.~12, n. 1 supp, p. 63--82, jan.
+  2004.
+ISSN 0218-4885.
+Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1142/S0218488504002588}.}
+
+\bibitem[Sahami 1996]{SAHAMI1996}
+\abntrefinfo{Sahami}{SAHAMI}{1996}
+{SAHAMI, Mehran. Learning limited dependence bayesian classifiers. In:
+  \textbf{Proceedings of the Second International Conference on Knowledge
+  Discovery and Data Mining}. AAAI Press, 1996.  (KDD'96), p. 335--338.
+  Dispon{\'\i}vel em: \url{http://dl.acm.org/citation.cfm?id=3001460.3001537}.}
 
 \bibitem[Sebastiani, Abad e Ramoni 2010]{SEBASTIANI2010}
 \abntrefinfo{Sebastiani, Abad e Ramoni}{SEBASTIANI; ABAD; RAMONI}{2010}
@@ -84,11 +152,27 @@ In:  \underline{\ \ \ \ \ \ \ \ }. \textbf{Data Mining and Knowledge Discovery
 ISBN 978-0-387-09823-4.
 Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1007/978-0-387-09823-4\_10}.}
 
+\bibitem[Sierra e {n}aga 1998]{SIEERA1998}
+\abntrefinfo{Sierra e {n}aga}{SIERRA; {n}AGA}{1998}
+{SIERRA, B.; {n}AGA, P. Larra\. {Predicting survival in malignant skin melanoma
+  using Bayesian networks automatically induced by genetic algorithms. An
+  empirical comparison between different approaches.}
+\textbf{Artif Intell Med}, Department of Computer Science and Artificial
+  Intelligence, University of the Basque Country, San Sebastian, Spain.
+  ccpsiarb@si.ehu.es, v.~14, n.~1-2, p. 215--230, 1998.
+ISSN 0933-3657.}
+
 \bibitem[Witten, Frank e Hall 2017]{WITTEN2017}
 \abntrefinfo{Witten, Frank e Hall}{WITTEN; FRANK; HALL}{2017}
 {WITTEN, Ian~H.; FRANK, Eibe; HALL, Mark~A. \textbf{Data Mining: Practical
   Machine Learning Tools and Techniques}. 4rd. ed. San Francisco, CA, USA:
   Morgan Kaufmann Publishers Inc., 2017.
 ISBN 0123748569, 9780123748560.}
+
+\bibitem[Zanakis e Evans 1981]{STELIOS1981}
+\abntrefinfo{Zanakis e Evans}{ZANAKIS; EVANS}{1981}
+{ZANAKIS, Stelios~H.; EVANS, James~R. Heuristic “optimization”: Why, when,
+  and how to use it.
+\textbf{Interfaces}, v.~11, n.~5, p. 84--91, 1981.}
 
 \end{thebibliography}

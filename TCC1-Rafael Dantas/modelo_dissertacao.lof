@@ -1,5 +1,7 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces Estrutura da rede do Naive Bayes}}{11}{figure.caption.14}
-\contentsline {figure}{\numberline {2}{\ignorespaces Demonstra\c c\~ao da capacidade da colonia de formigas em encontrar o melhor caminho entre dois pontos\textit {Nest} e \textit {Food}\relax }}{12}{subfigure.1.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Demonstra\c c\~ao do ambiente. Dois caminhos poss\IeC {\'\i }veis a serem percorridos entre dois pontos.}}}{12}{subfigure.2.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Probabilisticamente no in\IeC {\'\i }cio, 50\% das formigas v\~ao pelo menor caminho(circulos) e 50\% das formigas v\~ao pelo maior caminho(quadrados).}}}{12}{subfigure.2.2}
+\contentsline {figure}{\numberline {1}{\ignorespaces Estrutura da rede do Naive Bayes}}{12}{figure.caption.14}
+\contentsline {figure}{\numberline {2}{\ignorespaces Algumas poss\IeC {\'\i }veis formas geradas pelo KDBC com 3 Atributos e $K$ = 2 (2-BDC).\relax }}{13}{subfigure.1.5}
+\contentsline {figure}{\numberline {3}{\ignorespaces Fluxograma de um T\IeC {\'\i }pico Algoritmo Evolutivo}}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {4}{\ignorespaces Demonstra\c c\~ao da capacidade da colonia de formigas em encontrar o melhor caminho entre dois pontos\textit {Nest} e \textit {Food}\relax }}{18}{subfigure.3.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Demonstra\c c\~ao do ambiente. Dois caminhos poss\IeC {\'\i }veis a serem percorridos entre dois pontos.}}}{18}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Probabilisticamente no in\IeC {\'\i }cio, 50\% das formigas v\~ao pelo menor caminho(circulos) e 50\% das formigas v\~ao pelo maior caminho(quadrados).}}}{18}{subfigure.4.2}

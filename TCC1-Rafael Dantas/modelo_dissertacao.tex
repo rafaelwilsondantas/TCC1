@@ -80,8 +80,8 @@
 \autor{Rafael Wilson Dantas da Silva} % autor do trabalho
 \cita{SILVA, Rafael} % sobrenome (maiúsculas), nome do autor do trabalho
 
-\palavraschave{Palavra-chave 1. Palavra-chave 2. (entre 3 e 5 palavras)} % palavras-chave do trabalho - Devem ser inseridas de 3 a 5 palavras chave
-\keywords{Keyword 1. Keyword 2. (entre 3 e 5 palavras)} % palavras-chave do trabalho em inglês - Devem ser inseridas de 3 a 5 palavras chave
+\palavraschave{Redes Bayesianas. Classificadores Bayesianos.Classificadores Bayesianos K-dependenes  } % palavras-chave do trabalho - Devem ser inseridas de 3 a 5 palavras chave
+\keywords{Bayes Network. Bayes Classifiers. K-Dependence Bayes classifiers} % palavras-chave do trabalho em inglês - Devem ser inseridas de 3 a 5 palavras chave
 \comentario{\UTFPRdocumentodata\ apresentada ao \UTFPRcoordenacaodata\ da \UTFPRinstituicaodata\ como requisito parcial para obten\c{c}\~ao do título de ``\UTFPRtitulacaodata\ em \UTFPRareadata''.}
 
 
@@ -152,14 +152,24 @@
 
 %%%%% resumo
 \begin{resumo}
-Texto do resumo (m\'aximo de 500 palavras).
+Atualmente os classificadores bayesiano tem recebido bastante destaque no campo de Mineração de Dados pelo seu ótimo desempenho. 
+A independência entre seus atributos faz com que o processo de mineração torne-se rápido. 
+Porém esta independência não pode ser aplicada a problemas do mundo real. 
+Assim surgiram modificações aos classificadores Bayesianos que sugerindo possíveis relações de dependência entre os atributos.
+Porém encontrar o melhor classificador a se utilizar gera um problema Np-Completo. 
+Uma das possíveis abordagens,que tem-se utilizado para solucionar este problema, é a utilização de algoritmos evolutivos na busca para uma solução boa.
 \end{resumo}
 %
 %%%%% abstract em ingles
 \begin{abstract}
 SOBRENOME, Nome. \textbf{\UTFPRtitledata.} \UTFPRanodefesa. \pageref{LastPage} f. Master Thesis -- Electrical Engineering Graduate Program, Federal University of Technology - Paraná. Cornélio Procópio, \UTFPRdatadata.
 
-This is the english abstract. (maximum of 500 words).
+Nowadays the Bayesian classifiers have received a lot of attention in the field of Data Mining for their excellent performance.
+The independence of its attributes makes the mining process fast.
+But this independence can not be applied to real-world problems.
+Hence modifications appeared to the Bayesian classifiers that suggest possible dependency relations between the attributes.
+However finding the best classifier to use generates an Np-Complete problem.
+One of the possible approaches that has been used to solve this problem is the use of evolutionary algorithms in the search for a good solution
 
 \textbf{Keywords:} \UTFPRkeywordsdata
 \end{abstract}
@@ -208,40 +218,55 @@ Há uma grande diferença entre a quantidade de dados que produzimos e a quantidad
 
 Mineração de dados é sobre resolver problemas por meio da análise de dados já presentes na base de dados e um dos seus objetivos é a descoberta de conhecimento através de técnicas computacionais, que são capazes de explorar um grande conjunto de dados evidenciando padrões e auxiliando na descoberta de conhecimento. Este desenfreado crescimento de base de dados, traz a mineração de dados para o primeiro plano das novas tecnologias \cite{WITTEN2017}. 
 
-A contrução de um classificador é uma tarefa básica na analise de dados e reconhecimento de padrões na Mineração de Dados. Simplificadamente, um classificador é uma função que assemelha com base em um conjunto de atributos um valor ao rotulo da classe \cite{FRIEDMAN1997}.
+A construção de um classificador é uma tarefa básica na analise de dados e reconhecimento de padrões na Mineração de Dados. Simplificadamente, um classificador é uma função que assemelha com base em um conjunto de atributos um valor ao rotulo da classe \cite{FRIEDMAN1997}.
 
 As Redes Bayesianas (serão explicadas na seção \ref{redesBayesianas}) tem se destacado como uma das abordagens mais promissoras no processo de descoberta de conhecimento em base de dados e uma das suas implementações mais conhecidas é o classificador \sigla{NB}{\textit{Naive Bayes}}\cite{SEBASTIANI2010}.
-O Naive Bayes é um classificador probabilistisco e tem como principal pressuposto a independência entre seus atributos. 
+O Naive Bayes é um classificador probabilístisco e tem como principal pressuposto a independência entre seus atributos. 
 
-\section{PROBLEMA}
-No situações reais a independência de atributos é irreal. Diante da limitação de independência entre os atributos, diversos trabalhos foram realizados sobre possíveis modificações na estrutura do NB. Um dos metódos de melhoria dos resultados obtidos pelo NB é extenção da estrutura do classificador, que consiste na represntação de  dependências entre os atributos \cite{JIANG2007}.
+\section{ORGANIZAÇÃO DO TEXTO} \label{organizacaoTexto}
+
+Na seção \ref{problema} serão abordados os problemas que motivaram o desenvolvimento deste trabalho.
+
+A justificativa para a execução deste trabalho encontra-se na seção \ref{justificativa}.
+
+Nas seções \ref{classificacao}, \ref{algoritmosEvolutivos} e \ref{colonicaFormigas} serão introduzidos conceitos sobre os algoritmos que envolvem este trabalho.
+
+Na seção \ref{proposta} será abordado detalhes da proposta deste trabalho, como cronograma e atividades a serem realizadas.
+
+
+\section{PROBLEMA} \label{problema}
+No situações reais a independência de atributos é irreal. Diante da limitação de independência entre os atributos, diversos trabalhos foram realizados sobre possíveis modificações na estrutura do NB. Um dos métodos de melhoria dos resultados obtidos pelo NB é extensão da estrutura do classificador, que consiste na representação de  dependências entre os atributos \cite{JIANG2007}.
 
 Uma forma de extensão dos classificadores Bayesianos foi apresentada por Sahami (1996), a fim de lidar com as suposições de independência entre os atributos do NB, onde ele introduz o termo \sigla{KDBC}{\textit{K-Dependence Bayesians Classifier} }, onde o valor $K$ representa o número máximo de nós pais que um atributo pode ter além da classe. Dessa forma um 0-KDBC seria o equivalente a um Naive Bayes \cite{FLORES2011}.
 
 Em \cite{COOPER1990} foi provado que tentar encontrar a melhor rede bayesiana gerada pelo KDBC é um problema que se encontra no domínio dos NP-Completos, ou seja, é inviável computacionalmente tentar encontrar a melhor solução. 
 
-\section{JUSTIFICATIVA}
+\section{JUSTIFICATIVA} \label{justificativa}
+
+A procura por algoritmos meta-heuristicos, que são capazes de encontrar boas soluções realizando uma busca no espaço das possíveis soluções, tem aumentado para resolver os complexos problemas existentes no mundo real \cite{LARRANAGA2013}. 
+
+Os algoritmos evolutivos são um dos mais bem sucedidos a conseguir resultados em diversos campos de atuação.  Aplicando seus mecanismos inspirados na evolução natureza, por exemplo, a sobrevivência do mais apto ou cruzamento genético e mutação, em uma população de soluções candidatas, abordagens evolutivas como algoritmos genéticos foram capazes de realizar uma busca mais eficaz e diversificada no espaço de soluções para problemas difíceis \cite{LARRANAGA2013}.
+
+Com isso, visto o notável sucesso dos algoritmos evolutivos em problemas considerados difíceis, este trabalho propõe a utilização de algoritmos Evolutivos e seus derivados como uma possível solução para o problema dos classificadores bayesianos gerados pelo algoritmo KDBC.
 
 
 
 
 
+\chapter{CLASSIFICADORES BAYESIANOS}  \label{classificacao}
 
-
-\chapter{CLASSSIFICAÇÃO} 
-\section{Teorema de Bayes} \label{teoremaBayes}
+\section{TEOREMA DE BAYES} \label{teoremaBayes}
 
 Se $A$, $B$ e $C$ são evento, a probabilidade de que estes eventos ocorram, $P(A)$, $P(B)$ e $P(C)$ respectivamente, pode ser representada por um número real entre 0 e 1. 
-
 A probabilidade de que um evento está ligada diretamente a quantidade de vezes em que ele ocorre em relação a quantidade de vezes em que um experimento é realizado.
-Logo, se um evento $E$ ocorre $N$ vezes em um experimento realizado $M$ vezes, então temos que $P(E) = M/N$.
+Logo, se um evento $E$ ocorre $N$ vezes em um experimento realizado $M$ vezes, então temos que $P(E) = M/N$ \cite{DOUGHERTY2012}.
 
 Para entender melhor o Teorema de Bayes que será explicado neste capitulo considere as seguintes definições:
 
 \begin{itemize}
-\item Eventos mutualmente exclusivos
+\item \textbf{Eventos mutualmente exclusivos}
 
-Eventos mutualemente exclusivos são eventos que não podem ocorrer ao mesmo tempo. Se $E$ e $F$ são mutualmente exclusivos, então a probabilidade da união entre eles é dada pela seguinte equação: 
+Eventos mutualmente exclusivos são eventos que não podem ocorrer ao mesmo tempo. Se $E$ e $F$ são mutualmente exclusivos, então a probabilidade da união entre eles é dada pela seguinte equação: 
 \begin{equation}
   P (E \cup F) = P(E) + P(F)
 \label{eq:mutualmenteExclusivos}
@@ -260,9 +285,9 @@ Onde, $P (E \cap F)$ é a verificação de que os eventos sejam independentes, defi
 \label{eq:interseccao}
 \end{equation}
 
-\item Probabilidade Condicional
+\item \textbf{Probabilidade Condicional}
 
-A probabilidade condicional é a probabilidade de um evento $E$ ocorrer em função da ocorrência de outro evento $F$. A sua representação é dado por $P(E|F)$ e é lida como ``a probabilidade de E, dado que F é verdadeiro''.
+A probabilidade condicional é a probabilidade de um evento $E$ ocorrer em função da ocorrência de outro evento $F$. A sua representação é dado por $P(E|F)$ e é lida como ``a probabilidade de E, dado que F é verdadeiro'' \cite{DOUGHERTY2012}.
 Uma das formas de calcular a  probabilidade condicional entre os eventos $E$ e $F$ é dada pela seguinte equação:
 
 \begin{equation}
@@ -277,7 +302,7 @@ E da mesma forma para calcularmos $P(F|E)$, temos:
 \label{eq:PFE}
 \end{equation}
 
-\item Regra do Produto de Probabilidades
+\item \textbf{Regra do Produto de Probabilidades}
 
 Se aplicarmos a multiplicação cruzada nas equações \ref{eq:PEF} e \ref{eq:PFE}, obtemos a seguinte equação:
 
@@ -288,12 +313,17 @@ Se aplicarmos a multiplicação cruzada nas equações \ref{eq:PEF} e \ref{eq:PFE}, 
 
 \end{itemize}
 
-Manipulando a Equação 6, igualando os dois termos equivalentes à direita, e rearran-
-jando obtêm-se o
-Dadas as considerações das a cima, manipulando os dois termos mais a direita da  equação \ref{eq:PEcapF} chegamos enfimm na equação do \textbf{Teorema de Bayes} como pode ser visto a seguir:
+Dadas as considerações das a cima, manipulando os dois termos mais a direita da  equação \ref{eq:PEcapF} chegamos enfim na equação do \textbf{Teorema de Bayes} como pode ser visto a seguir:
 \begin{equation}
   P (E|F) = \frac{P(F|E) \cdot P(E)}{P(F)}
 \label{eq:teoremaBayes}
+\end{equation}
+
+Onde a probabilidade de $P(E|F)$ é conhecida como \textbf{probabilidade posteriori} de um determinado evento $E$ ocorrer dado a ocorrência do evento $F$ a partir do conhecimento de estimativas das probabilidades $P(E)$ e $P(F)$ e do conhecimento da probabilidade condicional $P(F|E)$. A probabilidade posteriori pode ser expressa informalmente como:
+
+\begin{equation}
+  posteriori = \frac{verosimilhanca \cdot priori}{evidencia}
+\label{eq:probPosteriori}
 \end{equation}
 
 Com base no Teorema de Bayes surgiram os classificadores Bayesianos que serão explicados nas seções \ref{redesBayesianas} e \ref{classificadoresBayesianos}.
@@ -301,9 +331,9 @@ Com base no Teorema de Bayes surgiram os classificadores Bayesianos que serão ex
 \section{Redes Bayesianas} \label{redesBayesianas}
 Segundo \cite{SEBASTIANI2010}, atualmente as redes Bayesianos são uma das abordagens mais promissoras para o processo de descoberta do conhecimento.
 
-As redes bayesianas pertecencem a uma classe mais geral de modelos chamados de modelos probabilísticos gráficos que surgiram da combinação da teoria de grafos e da teoria da probabilidade.
-O seu sucesso se deve a sua capacidade de lidar com modelos probabilísticos complexos atravéz da decomposição em componentes menores e acessiveis.
-Um modelo probabilístico gráfico é definido por uma grafo onde os nós representam variáveis estocasticas e os arcos representam as dependências entre tais variáveis. 
+As redes bayesianas pertencem a uma classe mais geral de modelos chamados de modelos probabilísticos gráficos que surgiram da combinação da teoria de grafos e da teoria da probabilidade.
+O seu sucesso se deve a sua capacidade de lidar com modelos probabilísticos complexos através da decomposição em componentes menores e acessíveis.
+Um modelo probabilístico gráfico é definido por uma grafo onde os nós representam variáveis estocásticas e os arcos representam as dependências entre tais variáveis. 
 Esses arcos são marcos pela probabilidade de distribuição de interação entre as variáveis vinculadas\cite{SEBASTIANI2010}. 
 
 Uma rede Bayesiana é um modelo gráfico probabilístico onde o grafo conectando suas variáveis é um Grafo Acíclico Dirigido ( do inglês, DAG - \textit{Directed Acyclic Graph}). 
@@ -320,7 +350,7 @@ Este cálculo é baseado em uma suposição de independência onde os atributos $A_i$
 
 Quando representado por uma rede Bayesiana a estrutura do NB pode ser visto na figura \ref{fig:naiveBayes}. Essa rede consegue representar o principal pressuposto por trás do classificador NB, de que os atributos são independentes entre si e dependem apenas da classe.
 
-Naive Bayes é um dos mais efeivos classificadores, levando em conta o seu desempenho, atualmente. O desempenho do NB é surpreendente dado que a suposição de independência entre os atributos é quase sempre irreal \cite{FRIEDMAN1997}.
+Naive Bayes é um dos mais efetivos classificadores, levando em conta o seu desempenho, atualmente. O desempenho do NB é surpreendente dado que a suposição de independência entre os atributos é quase sempre irreal \cite{FRIEDMAN1997}.
 
 \begin{figure}[!h]
 	\centering
@@ -330,18 +360,162 @@ Naive Bayes é um dos mais efeivos classificadores, levando em conta o seu desemp
 	\label{fig:naiveBayes}
 \end{figure}
 
+O desempenho do NB pode ser prejudicado quando a suposição de independência entre os atributos é violada. Sendo assim diversos trabalhos tem surgido afim aperfeiçoar os classificadores Bayesianos. As técnicas aplicadas nestes trabalhos podem ser divididas da seguinte maneira \cite{JIANG2007}:
+
+\begin{itemize}
+\item \textbf{Seleção de Características}: Seleciona e agrupa os atributos em conjuntos nos quais os atributos satisfazem a relação de independência dos mesmo;
+\item \textbf{Extensão da Estrutura}: Estende a estrutura do NB afim de representar as possíveis dependências entre os atributos;
+\item \textbf{Aprendizagem Local}:Aplica o conceito de treinamento local a fim de encontrar um subconjunto local e utilizar o classificador NB;
+\item \textbf{Expansão de Dados}:Expandindo os dados de treinamento e construir o NB utilizando os dados de treinamento expandidos.
+\end{itemize}
+
+O método que iremos analisar neste trabalho será o de Extensão da Estrutura, em especial o algoritmo KDBC que será explicado na seção \ref{kdbc}. 
+
+\section{K-Dependence Bayesian Classifier} \label{kdbc}
+
+Estendendo a estrutura do NB e utilizando arcos para explicitamente representar as dependências entre os atributos é uma forma direta de relaxar a suposição de que os atributos devem ser independentes entre si.
+
+Em \cite{SAHAMI1996} introduz o conceito do algoritmo KDBC, mostrando que a probabilidade de cada atributo é condicionada a classe e até $K$ outros atributos, ou seja, cada atributo poderá ter de 0 a $K$ dependências com outros atributos \cite{FLORES2011}.
+Aplicar esta extensão dos classificadores bayesianos, pode gerar um número inacessível computacionalmente de classificadores.
+
+Na figura \ref{fig:KDBC} é mostrado um exemplo onde temos $k=2$ para um problema com 3 atributos. Neste caso cada atributo poderá depender, além da classe, de mais 0, 1 ou 2 atributos. Na demonstração da figura \ref{fig:KDBC} não foram desenhadas todas as possíveis redes pra este exemplo.
+
+\begin{figure}[!htb]
+ % \captionsetup{width=\textwidth}
+  
+  
+  \begin{center}
+  \mbox{%
+    \subfloat{
+    \includegraphics[width=.5\linewidth]{./Figuras/KDBC0.png}
+    \label{fig:avr-prgmem}
+    }
+   }
+  \mbox{%
+    \subfloat{
+    \includegraphics[width=.5\linewidth]{./Figuras/KDBC1.png}
+    \label{fig:avr-prgmem}
+    }
+    \subfloat{
+    \includegraphics[width=.5\linewidth]{./Figuras/KDBC1.png}
+    \label{fig:avr-prgmem}
+    }
+   }
+   \mbox{%
+    \subfloat{
+    \includegraphics[width=.5\linewidth]{./Figuras/KDBC5.png}
+    \label{fig:avr-prgmem}
+    }
+    \subfloat{
+    \includegraphics[width=.5\linewidth]{./Figuras/KDBC2.png}
+    \label{fig:avr-prgmem}
+    }
+   }
+   
+   \caption{Algumas possíveis formas geradas pelo KDBC com 3 Atributos e $K$ = 2 (2-BDC).}
+  \fonte{Autoria Própria}
+  \label{fig:KDBC}
+  \end{center}
+\end{figure}
+
+\chapter{Heurísticas e Meta-heurísticas}
+
+Heurísticas são abordagens aproximativas cujo objetivo é a  melhora no desempenho de soluções que buscam resolver problemas NP-completos.
+
+Um método Heurístico é uma abordagem cujo objetivo é encontrar uma solução localmente ótima para um determinado problema computacional. A busca heurística usa informações do problema para direcionar o algoritmo a locais promissores do espaço de busca.
+A principal característica dos métodos heurísticos consiste em encontrar ``boas`` soluções em tempo computacional razoável bem como minimizar o espaço ocupado pelas configurações e estados que um determinado algoritmo pode assumir \cite{CAMPELLO1994}.
+
+As Heurísticas podem ser classificadas de três formas: construtivas, de melhoramento e meta-heurísticas. 
+
+Uma heurística é construtiva quando ela parte de uma solução vazia e considera a cada iteração apenas o próximo passo e após inserir uma partícula na solução,  não é mais possível retirá-la.
+Já as de melhoramento partem de uma solução já construída e ela irá trabalhar no melhoramento da solução atual \cite{STELIOS1981}.
+
+As meta-heurísticas são métodos de busca que combinam outras formas de heurísticas para resolver determinado e particular problema.
+
+
+\section{ALGORITMOS EVOLUCIONÁRIOS} \label{algoritmosEvolutivos}
+\sigla{AE}{Algoritmos Evolucionários} baseiam-se no processo de evolução natural proposto por Charles Darwvin (1850) para criar modelos computacionais na resolução de problemas.
+Processo este que mantém uma população de indivíduos ou cromossomos que se comporta de forma semelhante à evolução das espécies.
+Cada indivíduo recebe uma avaliação que é quantificada em relação a solução do problema em questão, para então ser aplicado os operadores genéticos de forma a  simular a sobrevivência dos indivíduos no meio.
+Os Operadores genéticos são aproximações de fenômenos vistos na natureza. Denomina-se gerações, todas as vezes que um indivíduo é exposta a essas etapas  \cite{LINDEN2008}.
+
+Há uma grande variedade de modelos computacionais propostos na literatura, porém a grande maioria deles tem em comum a aplicação dos conceitos de seleção, mutação e reprodução na simulação da evolução das espécies. 
+Estes processos dependem do desempenho dos indivíduos de cada espécie dentro do ambiente \cite{LINDEN2008}. 
+
+A figura \ref{fig:fluxogramaEvolutivo} representa a mais comum representação de um algoritmo evolutivo.
+
+\begin{figure}[!h]
+	\centering
+	\caption[Fluxograma de um Típico Algoritmo Evolutivo]{Fluxograma de um Típico Algoritmo Evolutivo}
+	\fonte{Releitura de \cite{LARRANAGA2013}}
+	\label{fig:fluxogramaEvolutivo}	
+	\includegraphics[width=1\linewidth]{Figuras/algoritmosEvolucionariosWorkFlow.png}
+	
+	
+\end{figure}
 
 
 
-\section{K-Dependence Bayesian Classifier (KDBC)} \label{kdbc}
+\subsection{ALGORITMOS GENÉTICOS}
+Segundo \cite{LINDEN2008}, \sigla{AG}{Algoritmos Genéticos} são um ramo dos Algoritmos Evolucionários e como tal podem ser definidos como técnica de busca baseada numa metáfora do processo biológico natural.
+Os GAs por serem de otimização global, opõem métodos como o \textit{hill climbing}, que segue a derivada de uma função ao ponto de encontrar o máximo de uma função.
+
+Os algoritmos Genéticos são técnicas heurísticas de otimização global. 
+Algoritmos Genéticos são eficientes em buscar, no espaço das soluções, as que sejam tão próximas da solução ótimo quanto possível e isso quase sempre sem a interação humana.
+Portanto os algoritmos Genéticos são uma técnica adequada para problemas especialmente difíceis, como os problemas denominados NP completos \cite{LINDEN2008}.
+
+O funcionamento básico de um AG é através da evolução de uma população de candidato soluções para o problema através de um número de gerações, a fim de obter melhores soluções.
+As soluções são geralmente representadas como sequências binárias. 
+O algoritmo seleciona um subconjunto de soluções de adaptação a partir da população de acordo com um mecanismo de seleção. 
+Estas soluções parentais são usadas para reproduzir novas soluções de prole aplicando operadores genéticos como crossover e mutação. 
+As soluções recentemente geradas competem então com as soluções na população para a sobrevivência de acordo com sua aptidão \cite{LARRANAGA2013}.
+
+\section{Arreficimento Simulado}
+O Arrefecimento simulado (\sigla{SA}{inglês Simulated Annealing}) é uma meta-heurística probabilística que segue uma linha de raciocínio baseado no sistema físico da termodinâmica. 
+A técnica consiste em aquecer metais a altas temperaturas e permitir seu arrefecimento de forma lenta o suficiente para que seus átomos consigam se organizar em um estado de energia miníma. Com isso o material ganha rigidez e consistência \cite{VANLAARHOVEN1987}.
+
+Ao realizar uma comparação do modelo computacional do SA com a abordagem física do problema podemos ter as seguintes comparações: 
+\begin{itemize}
+ \item \textbf{(1)} Os possíveis estados do metal significam as soluções no espaço de busca;
+ \item \textbf{(2)} A energia em cada estado física significa o valor da função objetivo;
+ \item \textbf{(3)} A energia mínima ou máxima corresponde ao valor de uma solução ótima local, possivelmente global.
+\end{itemize}
+
+Ao considerar que o objetivo é a minimização, o SA tem o funcionamento básica da seguinte forma. A cada iteração é gerada um novo estado a partir do estado que atual, de forma aleatória. Então é comparado a energia entre os estados, como estamos em um problema de minimização, se o novo estado tiver energia menor que o atual ele será escolhido como o estado corrente. Caso a energia do atual seja menor do que a energia do estado gerado, é aplicado algum método à de determinar a  probabilidade de mudança de estados.
 
 
 
-\chapter{Otimização por colônia de formigas}
+\section{VNS}
+
+\sigla{VNS}{\textit{Variable Neighborhood Search}} é uma meta-heurística baseada na exploração de múltiplas definições de vizinhança impostas ao mesmo espaço de solução. O algoritmo funciona em cima de basicamente duas etapas, a etapa de agitação, onde um vizinha da solução atual é gerado aleatoriamente, e a etapa de busca local, onde é aplicada uma busca local em cima da solução gerada na etapa de agitação.
+O algoritmo vai gradativamente explorando vizinhanças cada vez mais distantes e focaliza a busca em torno de uma nova solução somente se um movimento de melhora é realizado \cite{MLADENOVIC1997}.
+
+O algoritmo VNS básico pode ser definido em aproximadamente 4 passos:
+\begin{itemize}
+ \item \textbf{Passo 1.} seleciona-se um conjunto de estruturas de vizinhança  $N_k = (k = 1, k = 2, . . . , k_max)$ e defini-se uma solução inicial $x$;
+ \item \textbf{Passo 2.} gera-se uma solução $x \in N_k(x)$ aleatoriamente;
+ \item \textbf{Passo 3.} aplica-se busca local em $x'$ com objetivo de encontrar um ótimo local $x''$;
+ \item \textbf{Passo 4.} se $x''$ for melhor que x, então $ x'' $ torna-se a solução atual.
+\end{itemize}
+
+A arquitetura do VNS apesar de simples e possuir poucos parâmetros pode ser implementada utilizando organizações mais sofisticadas ou mesmo hibridizadas com outras meta-heurísticas.
+
+
+
+\section{GRASP}
+
+\sigla{GRASP}{\textit{Greedy Randomized Adaptive Search Procedures}} é uma meta-heurística que implementa uma hibridização entre um algoritmo semi-guloso, que está interessado nas melhores soluções de cada iteração, e um método de busca local. A cada iteração abrange basicamente de duas fases: construção e busca local.  
+A fase de construção cria uma solução viável, cuja vizinhança é investigada até que um mínimo local seja encontrado durante a fase de busca local. A melhor solução global é mantida como resultado. GRASP e VNS são de alguma forma complementares, no sentido de que a randomização é aplicada no GRASP na fase de construção, enquanto que o VNS é aplicada na fase de busca local local \cite{FEO1995}.
+A fase construtiva é executada através da estratégia gulosa aleatorizada e pode ser realizada através de diferentes abordagens.
+Na fase de busca local, o GRASP pode empregar qualquer processo de busca heurística, no entanto, o algoritmo mais utilizado na literatura é o VNS.
+
+O GRASP tenta solucionar o problema de diversidade que acompanha a busca gulosa ao mesmo tempo que permite a construção de soluções qualitativamente melhores quando comparado à inicialização aleatória. Nem sempre é possível encontrar uma solução realizável, assim é necessário que seja realizado a invocação de algum método que seja capaz de reparar a solução de modo que ela se torne uma solução factível. Alternativamente este reparo pode ser simplesmente o descarte da solução e a aplicação da busca semi-gulosa novamente até que se ache uma solução factível \cite{HIRSCH2007}. 
+
+\section{Otimização por colônia de formigas} \label{colonicaFormigas}
 Introduzido por Marico Dorigo e colegas no começos dos anos de 1990 \cite{DORIGO1996}\cite{DORIGO2005}, o \sigla{ACO}{Ant Colony Optimization}(em português, Otimização por Colônia de Formigas ou Otimização Colônia de Formigas) é baseado no comportamento das formigas ao se organizarem para encontrar o melhor percurso entre dois pontos, como por exemplo o lugar onde buscam comida e o ninho.
 
 Inicialmente as formigas percorrem a área em busca de comida de forma randômica. 
-Enquanto se movem as formigas deixam pelo caminho um rastro de ferômonio, que pode ser percebido pelas outras formigas. 
+Enquanto se movem as formigas deixam pelo caminho um rastro de feromônio, que pode ser percebido pelas outras formigas. 
 Quando a formiga encontra uma fonte de alimento, ela avalia a qualidade e quantidade do alimento e carrega o alimento de volta ao ninho. 
 No caminho de retorno o feromônio produzido pela formiga pode depender da qualidade e da quantidade de comida encontrada e como a formiga que encontrou o melhor caminho retornará antes, o rastro deixado por ela será mais forte. Probabilisticamente as formigas tendem a seguir o caminhos com grandes quantidades de feromônio. Assim as outras formigas serão guiadas pelo melhor caminho \cite{DREO2002} \cite{BlUM2005}.
 A demonstração do problema pode ser visto na figura ~\ref{fig:aco} .
@@ -349,6 +523,7 @@ A demonstração do problema pode ser visto na figura ~\ref{fig:aco} .
 
 \begin{figure}[!htb]
  % \captionsetup{width=\textwidth}
+  
   
   \begin{center}
   \mbox{%
@@ -373,36 +548,42 @@ A demonstração do problema pode ser visto na figura ~\ref{fig:aco} .
     }
        }
   \end{center}
-  \label{fig:aco}
+  
   \caption{Demonstração da capacidade da colonia de formigas em encontrar o melhor caminho entre dois pontos\textit{Nest} e \textit{Food}}
-  \fonte{\cite{BlUM2005}}
+  \fonte{\cite{BlUM2005}}  
+  \label{fig:aco}
+  
 \end{figure}
 
 
 
 
+\chapter{PROPOSTA} \label{proposta}
 
-\chapter{ALGORITMOS EVOLUCIONÁRIOS}
-Algoritmos Evolucionários baseiam-se no processo de evolução natural proposto por Charles Darwvin (1850) para criar modelos computacionais na resolução de problemas.
-Processo este que mantem uma populão de individuos ou cromossomos que se comporta de forma semelhante à evolução das espécies.Cada indivíduo recebe uma avaliação que é quantificada em relação a solução do problema em questão, para então ser aplicado os operadores genéticos de forma a  simular a sobrevivência dos indivíduos no meio \cite{LINDEN2008}.
+Em \cite{FLORES2011} propões o uso de um tipo de AGs, que considera que todas as variáveis são independentes na hora da construção do modelo, para buscar por melhores representações de depências entre os atributos preditores nas Redes Bayesianas.
 
-Há uma grande variedade de modelos computacionais propostos na literatura, porém a grande maioria deles tem em comum a aplicação dos conceitos de seleção, mutação e reprodução na simulação da evolução das espécies. 
-Estes processos dependem do desempenho dos indivíduos de cada espécie dentro do ambiente \cite{LINDEN2008}.
+Enquanto em \cite{SIEERA1998} é proposta o uso de AGs para encontrar a melhor relação entre os nós pais e filhos para atributos classe de problemas do mundo real. 
+Eles compararam os resultados de seus classificadores com o NB e com classificadores bayesianos aprendidos por maximização de vizinhança. 
+Quando comparados foi verificado que os classificadores gerados por seus métodos utiliando GAs obtiveram um número maior de acerto do que os outros classificadores. 
+Este método foi utilizado em um esquema multi-classificador para classificar dados de pacientes da unidade de terapia intensiva.
+
+Em \cite{PENA2004} foi mostrado o uso de GAs na busca estruturas mais precisas para Redes Bayesianas em problemas de predição de Tromboembolismo (coágulo de sangue nas veias, mais conhecido popularmente como trombose).
+
+As redes bayesianas são uma importante classe de modelos probabiíisticos que se mostram muito eficazes em domínios incertos. Elas são estudadas ao longo das últimas três décadas e muitos métodos têm sido propostos para automatizar sua aprendizagem e inferência.
+No entanto, muitos destes métodos envolvem difíceis problemas de pesquisa combinatória que afetam diretamente seu uso generalizado, especialmente para grandes instâncias de problema, e assim requerem técnicas avançadas de busca como meta-heurísticas \cite{LARRANAGA2013}.
+
+Algoritmos evolutivos, são métodos de busca estocástica de propósito geral inspirados na evolução natural e frequentemente aplicado para resolver muitos problemas complexos do mundo real. Devido às suas vantagens, diferentes tipos de algoritmos evolutivos têm sido utilizados nas redes Bayesianas \cite{LARRANAGA2013}.
+
+Um dos pontos chaves da utilização de Algoritmos evolutivos combiandos com redes bayesianas, é a escolha da representação das redes como indivíduos. Pois a representação do indivíduo pode impactar de maneira grande o desempenho computacional do algoritmos.
+Como consequência dessa necessidade vários trabalhos focam boa parte de seus estudos em maneiras de representação de grafos como indivíduos em Algortimos Evolutivos.
 
 
-\section{ALGORITMOS GENÉTICOS}
-Os algortimos Genéticos são técnicas heuristicas de otimização global. 
-Algoritmos Genéticos são eficientes em buscar, no espaço das soluções, as que sejam tão próximas da solução ótimo quanto possível e isso quase sempre sem a interação humana.
-Portanto os algoritmos Genéticos são uma técnica adequada para problemas especialmente difíceis, como os problemas denominados NP completos \cite{LINDEN2008}.
+Este trabalho pretende encontrar uma representação para redes bayesianas que se adeque aos algoritmos utilizados.Assim este trabalho propõe a aplicação de Algortimos Evolutivos, métodos de busca heuristicas e meta-heuristicas para melhorar ou buscar pela melhor rede bayesiana. Este trabalho também abre para a possibilidade da utilização de algortimos de busca local para melhorar as relações de dependência entre os atributos.
 
-\chapter{PROPOSTA}
 
-\section{METODOLOGIA DE PESQUISA}
-
-\section{TRABALHOS RELACIONADOS}
 
 \section{ATIVIDADES PLANEJADAS}
-Durante este trabalho serão realizadas as atividades descritas na tabela \ref{tab:atv}:
+Durante este trabalho pretende-se realizar as atividades descritas na tabela \ref{tab:atv} bem como a ordem e o tempo em que ocorrerão descritos na tabela \ref{tab:cronograma}.
 	
 \begin{table}[!h]
 	\centering
@@ -414,23 +595,18 @@ Durante este trabalho serão realizadas as atividades descritas na tabela \ref{ta
 		\textbf{1}      & Definição do tema para defesa da proposta            \\ \hline
 		\textbf{2}      & Entendimento do problema                            \\ \hline
 		\textbf{3}      & Pesquisas relacionadas a Classificadores Bayesianos      \\ \hline
-		\textbf{4}      & Pesquisas relacionadas ao KBDC                    \\ \hline
-		\textbf{5}      & Pesquisas relacionadas a Algoritmos Genéticos \\ \hline
-		\textbf{5}      & Pesquisas relacionadas a Algoritmos de Busca como ACO \\ \hline
-		\textbf{6}      & Verificação do estado da arte                       \\ \hline
-		\textbf{7}      & Desenvolvimento da proposta                         \\ \hline
-		\textbf{8}      & Implementação do Algoritmo Naive Bayes                         \\ \hline
-		\textbf{9}      & Implementação do Algoritmo KDBC                         \\ \hline
-		\textbf{10}      & Representação do KBDC em um Algortimo de Busca \\ \hline
-		\textbf{11}      & Integração de Grafos e Método escolhido para o problema     \\ \hline
-		\textbf{12}      & Implementação Método escolhido para resolver o problema                         \\ \hline
-		\textbf{13}      & Construção de sistema de integração entre os Algoritmos \\ \hline
-		\textbf{14}      & Escrita da Monografia \\ \hline		
+		\textbf{4}      & Pesquisas relacionadas a Algoritmos Evolutivos \\ \hline
+		\textbf{5}      & Verificação do estado da arte                       \\ \hline
+		\textbf{6}      & Desenvolvimento da proposta                         \\ \hline
+		\textbf{7}      & Implementação do Algoritmos de classificação                         \\ \hline
+		\textbf{8}      & Representação do KBDC em um Algoritmo de Busca \\ \hline
+		\textbf{9}      & Integração de Grafos e Método escolhido para o problema     \\ \hline
+		\textbf{10}      & Análise do desempenho dos classificadores \\ \hline
+		\textbf{11}      & Escrita da Monografia \\ \hline		
 	\end{tabular}
 \end{table}
 
 
-\section{CRONOMAGRAMA PLANEJADO}
 \begin{table}[!ht]
 	\centering
 	\caption{Cronograma de atividades}
@@ -445,25 +621,17 @@ Durante este trabalho serão realizadas as atividades descritas na tabela \ref{ta
 		\textbf{4}                           &             & \cellcolor{gray}            & \cellcolor{gray}            &              &              &              &              &              &              \\ \hline
 		\textbf{5}                           &             & \cellcolor{gray}            & \cellcolor{gray}            &              &              &              &              &              &              \\ \hline
 		\textbf{6}                           &             & \cellcolor{gray}            & \cellcolor{gray}            &              &              &              &              &              &              \\ \hline
-		\textbf{7}                           &              & \cellcolor{gray}            & \cellcolor{gray}            &              &              &              &              &              &              \\ \hline
-		\textbf{8}                           &              &              &              & \cellcolor{gray}            & \cellcolor{gray}            &              &              &              &              \\ \hline
-		\textbf{9}                           &              &              &              & \cellcolor{gray}           & \cellcolor{gray}           &              &              &              &              \\ \hline
-		\textbf{10}                          &              &              &              &              & \cellcolor{gray}            & \cellcolor{gray}            &              &              &              \\ \hline
-		\textbf{11}                          &              &              &              &              & \cellcolor{gray}             & \cellcolor{gray}             &             &             &              \\ \hline
-		\textbf{12}                          &              &              &              &              &             & \cellcolor{gray}          & \cellcolor{gray}           & \cellcolor{gray}            &             \\ \hline
-		\textbf{13}                          &              &              &              &              &             & \cellcolor{gray}            & \cellcolor{gray}            & \cellcolor{gray}            &             \\ \hline
-		\textbf{14}                          &              &              &              &              &             &             &   \cellcolor{gray}          &   \cellcolor{gray}          &  \cellcolor{gray}           \\ \hline
+		\textbf{7}                           &              &             &            &  \cellcolor{gray}            & \cellcolor{gray}             &              &              &              &              \\ \hline
+		\textbf{8}                           &              &              &              & \cellcolor{gray}            & \cellcolor{gray}            & \cellcolor{gray}             &  \cellcolor{gray}            & \cellcolor{gray}             &              \\ \hline
+		\textbf{9}                           &              &              &              & \cellcolor{gray}            & \cellcolor{gray}            & \cellcolor{gray}             &  \cellcolor{gray}            & \cellcolor{gray}             &              \\ \hline
+		\textbf{10}                           &              &              &              & \cellcolor{gray}            & \cellcolor{gray}            & \cellcolor{gray}             &  \cellcolor{gray}            & \cellcolor{gray}             &              \\ \hline
+		\textbf{11}                          &              &              &              &              &              &              &             & \cellcolor{gray}             & \cellcolor{gray}              \\ \hline
 	\end{tabular}
 \end{table}
 
-
-\chapter{CONSIDERAÇÕES FINAIS}
-
-
-
 % recomenda-se a escrita de cada capitulo em um arquivo texto separado (exemplo: intro.tex, fund.tex, exper.tex, concl.tex, etc.) e a posterior inclusao dos mesmos no mestre do documento utilizando o comando \input{}, da seguinte forma:
 %\input{capitulo1/cap1.tex}
-%\input{capitulo2/cap2.tex}
+
 %\input{capitulo3/cap3.tex}
 
 

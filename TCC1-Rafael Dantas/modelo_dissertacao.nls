@@ -2,11 +2,21 @@
 
  \nomgroup{A}
 {\hspace {0.14cm} ACO}&\begingroup Ant Colony Optimization\nomeqref {0}
-		\nompageref{12} \\
+		\nompageref{17} \\
+{\hspace {0.14cm} AE}&\begingroup Algoritmos Evolucionários\nomeqref {0}
+		\nompageref{14} \\
+{\hspace {0.14cm} AG}&\begingroup Algoritmos Genéticos\nomeqref {0}
+		\nompageref{14} \\
+{\hspace {0.14cm} GRASP}&\begingroup \textit {Greedy Randomized Adaptive Search Procedures}\nomeqref {0}
+		\nompageref{16} \\
 {\hspace {0.14cm} KDBC}&\begingroup \textit {K-Dependence Bayesians Classifier} \nomeqref {0}
 		\nompageref{8} \\
 {\hspace {0.14cm} NB}&\begingroup \textit {Naive Bayes}\nomeqref {0}
 		\nompageref{8} \\
+{\hspace {0.14cm} SA}&\begingroup inglês Simulated Annealing\nomeqref {0}
+		\nompageref{15} \\
+{\hspace {0.14cm} VNS}&\begingroup \textit {Variable Neighborhood Search}\nomeqref {0}
+		\nompageref{16} \\
 
 
 \end{thenomenclature}

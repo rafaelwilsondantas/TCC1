@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.18)  11 MAY 2017 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.8.18)  18 MAY 2017 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1440,7 +1440,32 @@ line 63.
 LaTeX Warning: Unused global option(s):
     [french].
 
-(./modelo_dissertacao.aux)
+(./modelo_dissertacao.aux
+
+LaTeX Warning: Label `fig:avr-prgmem' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:avr-prgmem' multiply defined.
+
+
+LaTeX Warning: Label `fig:avr-prgmem' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:avr-prgmem' multiply defined.
+
+
+LaTeX Warning: Label `fig:avr-prgmem' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:avr-prgmem' multiply defined.
+
+
+LaTeX Warning: Label `fig:avr-prgmem' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:avr-prgmem' multiply defined.
+
+)
 \openout1 = `modelo_dissertacao.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
@@ -1458,8 +1483,7 @@ LaTeX Font Info:    ... okay on input line 117.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 117.
 LaTeX Font Info:    ... okay on input line 117.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 117.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
@@ -1683,198 +1707,324 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155 T
-       exto do resumo (m\'aximo de 500 palavras).
+l.155 A
+       tualmente os classificadores bayesiano tem recebido bastante destaque...
 \openout4 = `modelo_dissertacao.mw'.
 
- [1] (./modelo_dissertacao.mw)
-
-\openout4 = `modelo_dissertacao.mw'.
-
-[2] (./modelo_dissertacao.mw)
-
+[1] (./modelo_dissertacao.mw)
 
 \openout4 = `modelo_dissertacao.mw'.
 
- [3] (./modelo_dissertacao.mw)
+ [2] (./modelo_dissertacao.mw)
+
+
+\openout4 = `modelo_dissertacao.mw'.
+
+ [3]
+(./modelo_dissertacao.mw)
 
 
 
-
-(./modelo_dissertacao.lof
+ (./modelo_dissertacao.lof
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 3.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 5.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 10.79993pt on input line 3.
+(Font)              scaled to size 10.79993pt on input line 5.
 )
 \openout4 = `modelo_dissertacao.mw'.
 
- [4] (./modelo_dissertacao.mw)
+ [4]
+(./modelo_dissertacao.mw)
 
 
-
-(./modelo_dissertacao.lot)
+ (./modelo_dissertacao.lot)
 \openout4 = `modelo_dissertacao.mw'.
 
- [5] (./modelo_dissertacao.mw)
+ [5]
+(./modelo_dissertacao.mw)
 
 
 \instream=\read3
 runsystem(makeindex modelo_dissertacao.nlo -s utfpr-siglas.ist -o modelo_disser
 tacao.nls)...executed safely (allowed).
 
-
-(./modelo_dissertacao.nls)
+ (./modelo_dissertacao.nls)
 \openout4 = `modelo_dissertacao.mw'.
 
- [6] (./modelo_dissertacao.mw)
+ [6]
+(./modelo_dissertacao.mw)
 
 
 
-
-(./modelo_dissertacao.toc
+ (./modelo_dissertacao.toc
 LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
 (Font)              scaled to size 10.79993pt on input line 12.
 )
 \openout4 = `modelo_dissertacao.mw'.
 
- [7] (./modelo_dissertacao.mw)
+ [7]
+(./modelo_dissertacao.mw)
 
 
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 231.
+(Font)              scaled to size 8.99994pt on input line 241.
 \openout4 = `modelo_dissertacao.mw'.
 
- [8]
+ [8] (./modelo_dissertacao.mw)
+
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+ [9]
 (./modelo_dissertacao.mw)
-
-
-\openout4 = `modelo_dissertacao.mw'.
-
-\openout4 = `modelo_dissertacao.mw'.
-
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 242.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 267.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 242.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 267.
 \openout4 = `modelo_dissertacao.mw'.
 
- [9]
+ [10]
 (./modelo_dissertacao.mw)
 
 \openout4 = `modelo_dissertacao.mw'.
 
- [10] (./modelo_dissertacao.mw)
-<Figuras/figura_BN.png, id=177, 291.0875pt x 195.73125pt>
+ [11] (./modelo_dissertacao.mw)
+<Figuras/figura_BN.png, id=204, 291.0875pt x 195.73125pt>
 File: Figuras/figura_BN.png Graphic file (type png)
 
 <use Figuras/figura_BN.png>
-Package pdftex.def Info: Figuras/figura_BN.png used on input line 327.
+Package pdftex.def Info: Figuras/figura_BN.png used on input line 357.
 (pdftex.def)             Requested size: 182.09486pt x 122.4452pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 328.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 358.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 328.
+(Font)              scaled to size 8.99994pt on input line 358.
 \openout4 = `modelo_dissertacao.mw'.
 
- [11 <./Figuras/figura_BN.png>]
+ [12 <./Figuras/figura_BN.png>]
 (./modelo_dissertacao.mw)
+<./Figuras/KDBC0.png, id=222, 402.50375pt x 201.75375pt>
+File: ./Figuras/KDBC0.png Graphic file (type png)
 
-Package caption Warning: \label without proper \caption on input line 376.
-See the caption package documentation for explanation.
+<use ./Figuras/KDBC0.png>
+Package pdftex.def Info: ./Figuras/KDBC0.png used on input line 393.
+(pdftex.def)             Requested size: 227.62206pt x 114.09267pt.
 
+<./Figuras/KDBC1.png, id=224, 402.50375pt x 201.75375pt>
+File: ./Figuras/KDBC1.png Graphic file (type png)
 
-LaTeX Warning: Reference `fig:aco' on page 12 undefined on input line 347.
+<use ./Figuras/KDBC1.png>
+Package pdftex.def Info: ./Figuras/KDBC1.png used on input line 403.
+(pdftex.def)             Requested size: 227.62206pt x 114.09267pt.
+File: ./Figuras/KDBC1.png Graphic file (type png)
+ <use ./Figuras/KDBC1.png>
+Package pdftex.def Info: ./Figuras/KDBC1.png used on input line 403.
+(pdftex.def)             Requested size: 227.62206pt x 114.09267pt.
 
-<./Figuras/figura1a.png, id=193, 408.52625pt x 163.61125pt>
-File: ./Figuras/figura1a.png Graphic file (type png)
+<./Figuras/KDBC5.png, id=225, 402.50375pt x 249.93375pt>
+File: ./Figuras/KDBC5.png Graphic file (type png)
 
-<use ./Figuras/figura1a.png>
-Package pdftex.def Info: ./Figuras/figura1a.png used on input line 364.
-(pdftex.def)             Requested size: 227.62206pt x 91.16231pt.
+<use ./Figuras/KDBC5.png>
+Package pdftex.def Info: ./Figuras/KDBC5.png used on input line 413.
+(pdftex.def)             Requested size: 227.62206pt x 141.33867pt.
 
-<./Figuras/figura1b.png, id=194, 409.53pt x 169.63374pt>
-File: ./Figuras/figura1b.png Graphic file (type png)
+<./Figuras/KDBC2.png, id=226, 402.50375pt x 229.85875pt>
+File: ./Figuras/KDBC2.png Graphic file (type png)
 
-<use ./Figuras/figura1b.png>
-Package pdftex.def Info: ./Figuras/figura1b.png used on input line 364.
-(pdftex.def)             Requested size: 227.62206pt x 94.2876pt.
+<use ./Figuras/KDBC2.png>
+Package pdftex.def Info: ./Figuras/KDBC2.png used on input line 413.
+(pdftex.def)             Requested size: 227.62206pt x 129.98616pt.
 
-<./Figuras/figura1c.png, id=195, 408.52625pt x 166.6225pt>
-File: ./Figuras/figura1c.png Graphic file (type png)
-
-<use ./Figuras/figura1c.png>
-Package pdftex.def Info: ./Figuras/figura1c.png used on input line 374.
-(pdftex.def)             Requested size: 227.62206pt x 92.84015pt.
-
-<./Figuras/figura1d.png, id=196, 411.5375pt x 168.63pt>
-File: ./Figuras/figura1d.png Graphic file (type png)
-
-<use ./Figuras/figura1d.png>
-Package pdftex.def Info: ./Figuras/figura1d.png used on input line 374.
-(pdftex.def)             Requested size: 227.62206pt x 93.2691pt.
-
-Overfull \hbox (12.0091pt too wide) in paragraph at lines 364--375
+Overfull \hbox (12.0091pt too wide) in paragraph at lines 393--414
  [] 
  []
 
 
-Overfull \hbox (12.0091pt too wide) in paragraph at lines 364--375
+Overfull \hbox (12.0091pt too wide) in paragraph at lines 393--414
+ [] 
+ []
+
+\openout4 = `modelo_dissertacao.mw'.
+
+[13 <./Figuras/KDBC0.png> <./Figuras/KDBC1.png> <./Figuras/KDBC5.png> <./Figura
+s/KDBC2.png>] (./modelo_dissertacao.mw)
+<Figuras/algoritmosEvolucionariosWorkFlow.png, id=253, 707.64375pt x 307.1475pt
+>
+File: Figuras/algoritmosEvolucionariosWorkFlow.png Graphic file (type png)
+ <use Figuras/algoritmosEvolucionariosWorkFlow.png>
+Package pdftex.def Info: Figuras/algoritmosEvolucionariosWorkFlow.png used on i
+nput line 452.
+(pdftex.def)             Requested size: 455.24411pt x 197.59541pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+[14] (./modelo_dissertacao.mw)
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+ [15 <./Figuras/algoritmosEvolucionariosWorkFlow.png>] (./modelo_dissertacao.mw
+)
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+ [16] (./modelo_dissertacao.mw)
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+
+<./Figuras/figura1a.png, id=298, 408.52625pt x 163.61125pt>
+File: ./Figuras/figura1a.png Graphic file (type png)
+
+<use ./Figuras/figura1a.png>
+Package pdftex.def Info: ./Figuras/figura1a.png used on input line 539.
+(pdftex.def)             Requested size: 227.62206pt x 91.16231pt.
+
+<./Figuras/figura1b.png, id=299, 409.53pt x 169.63374pt>
+File: ./Figuras/figura1b.png Graphic file (type png)
+
+<use ./Figuras/figura1b.png>
+Package pdftex.def Info: ./Figuras/figura1b.png used on input line 539.
+(pdftex.def)             Requested size: 227.62206pt x 94.2876pt.
+
+<./Figuras/figura1c.png, id=300, 408.52625pt x 166.6225pt>
+File: ./Figuras/figura1c.png Graphic file (type png)
+
+<use ./Figuras/figura1c.png>
+Package pdftex.def Info: ./Figuras/figura1c.png used on input line 549.
+(pdftex.def)             Requested size: 227.62206pt x 92.84015pt.
+
+<./Figuras/figura1d.png, id=301, 408.52625pt x 164.615pt>
+File: ./Figuras/figura1d.png Graphic file (type png)
+
+<use ./Figuras/figura1d.png>
+Package pdftex.def Info: ./Figuras/figura1d.png used on input line 549.
+(pdftex.def)             Requested size: 227.62206pt x 91.72159pt.
+
+Overfull \hbox (12.0091pt too wide) in paragraph at lines 539--550
+ [] 
+ []
+
+
+Overfull \hbox (12.0091pt too wide) in paragraph at lines 539--550
  [] 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 377.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 552.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 377.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 552.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 8.99994pt on input line 377.
+(Font)              scaled to size 8.99994pt on input line 552.
 \openout4 = `modelo_dissertacao.mw'.
 
-[12 <./Figuras/figura1a.png> <./Figuras/figura1b.png> <./Figuras/figura1c.png> 
-<./Figuras/figura1d.png>] (./modelo_dissertacao.mw)
-
+[17] (./modelo_dissertacao.mw)
 \openout4 = `modelo_dissertacao.mw'.
 
 \openout4 = `modelo_dissertacao.mw'.
 
- [13]
+ [18 <./Figuras/figura1a.png> <./Figuras/figura1b.png> <./Figuras/figura1c.png>
+ <./Figuras/figura1d.png>]
+(./modelo_dissertacao.mw)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./modelo_dissertacao.bbl (./modelo_dissertacao.brf)
+\tf@brf=\write13
+\openout4 = `modelo_dissertacao.mw'.
+
+ [19]
 (./modelo_dissertacao.mw)
 
 \openout4 = `modelo_dissertacao.mw'.
 
- [14] (./modelo_dissertacao.mw)
-
-\openout4 = `modelo_dissertacao.mw'.
-
- [15]
-(./modelo_dissertacao.mw) (./modelo_dissertacao.bbl (./modelo_dissertacao.brf)
-\tf@brf=\write13
-\openout4 = `modelo_dissertacao.mw'.
-
-
-[16] (./modelo_dissertacao.mw)
-
-
+ [20] (./modelo_dissertacao.mw)
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
+\openout4 = `modelo_dissertacao.mw'.
+
+[21] (./modelo_dissertacao.mw)
+
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 
+      
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 
+      
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 
+      
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 
+      
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
 )
 runsystem(makeindex modelo_dissertacao.idx -s estilo-indice.ist -o modelo_disse
 rtacao.ind)...executed safely (allowed).
 
 \openout4 = `modelo_dissertacao.mw'.
 
- [17] (./modelo_dissertacao.mw)
-
- (./modelo_dissertacao.ind)
+ [22] (./modelo_dissertacao.mw) (./modelo_dissertacao.ind)
 
 AED: lastpage setting LastPage
 +===================================================================+
@@ -1896,8 +2046,8 @@ AED: lastpage setting LastPage
 \tf@lof=\write15
 \tf@lot=\write20
 \tf@toc=\write21
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 510.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 510.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 678.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 678.
 (./modelo_dissertacao.aux
 \openout4 = `modelo_dissertacao.mw'.
 
@@ -2027,21 +2177,67 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 510.
 
 \openout4 = `modelo_dissertacao.mw'.
 
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
+\openout4 = `modelo_dissertacao.mw'.
+
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 510.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 510.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 678.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 678.
 \openout4 = `modelo_dissertacao.brf'.
 
-Package rerunfilecheck Info: File `modelo_dissertacao.brf' has not changed.
-(rerunfilecheck)             Checksum: 164F23F06DDFE12E78DC3ECCC58BD07B;961.
 
 
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Warning: File `modelo_dissertacao.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
 
+Package rerunfilecheck Info: Checksums for `modelo_dissertacao.brf':
+(rerunfilecheck)             Before: 7828A2E6229DFC80003AF9CE3F391300;2007
+(rerunfilecheck)             After:  AEA92C3490CE3AB2949F9EB9FDF4F6CD;2007.
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 510.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 678.
 \openout4 = `modelo_dissertacao.abreviax'.
 
 \openout4 = `modelo_dissertacao.acronx'.
@@ -2062,26 +2258,28 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 510.
 
  ) 
 Here is how much of TeX's memory you used:
- 29857 strings out of 494976
- 489539 string characters out of 6180334
- 827349 words of memory out of 5000000
- 32368 multiletter control sequences out of 15000+600000
- 41283 words of font info for 127 fonts, out of 8000000 for 9000
+ 30106 strings out of 494976
+ 493746 string characters out of 6180334
+ 830954 words of memory out of 5000000
+ 32542 multiletter control sequences out of 15000+600000
+ 44483 words of font info for 157 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 64i,13n,102p,10396b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,13n,102p,10396b,588s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helve
-tic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on modelo_dissertacao.pdf (18 pages, 162478 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on modelo_dissertacao.pdf (23 pages, 258081 bytes).
 PDF statistics:
- 396 PDF objects out of 1000 (max. 8388607)
- 358 compressed objects within 4 object streams
- 85 named destinations out of 1000 (max. 500000)
- 20706 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 547 PDF objects out of 1000 (max. 8388607)
+ 491 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 22275 words of extra memory for PDF output out of 24883 (max. 10000000)
 
