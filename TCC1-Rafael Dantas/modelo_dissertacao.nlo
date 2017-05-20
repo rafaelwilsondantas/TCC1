@@ -1,8 +1,8 @@
 \nomenclatureentry{a\hspace {0.14cm} NB@{\hspace {0.14cm} NB}&\begingroup \textit {Naive Bayes}\nomeqref {0}|nompageref}{8}
 \nomenclatureentry{a\hspace {0.14cm} KDBC@{\hspace {0.14cm} KDBC}&\begingroup \textit {K-Dependence Bayesians Classifier} \nomeqref {0}|nompageref}{8}
-\nomenclatureentry{a\hspace {0.14cm} AE@{\hspace {0.14cm} AE}&\begingroup Algoritmos Evolucionários\nomeqref {0}|nompageref}{14}
-\nomenclatureentry{a\hspace {0.14cm} AG@{\hspace {0.14cm} AG}&\begingroup Algoritmos Genéticos\nomeqref {0}|nompageref}{14}
-\nomenclatureentry{a\hspace {0.14cm} SA@{\hspace {0.14cm} SA}&\begingroup inglês Simulated Annealing\nomeqref {0}|nompageref}{15}
-\nomenclatureentry{a\hspace {0.14cm} VNS@{\hspace {0.14cm} VNS}&\begingroup \textit {Variable Neighborhood Search}\nomeqref {0}|nompageref}{16}
-\nomenclatureentry{a\hspace {0.14cm} GRASP@{\hspace {0.14cm} GRASP}&\begingroup \textit {Greedy Randomized Adaptive Search Procedures}\nomeqref {0}|nompageref}{16}
-\nomenclatureentry{a\hspace {0.14cm} ACO@{\hspace {0.14cm} ACO}&\begingroup Ant Colony Optimization\nomeqref {0}|nompageref}{17}
+\nomenclatureentry{a\hspace {0.14cm} AE@{\hspace {0.14cm} AE}&\begingroup Algoritmos Evolucionários\nomeqref {0}|nompageref}{13}
+\nomenclatureentry{a\hspace {0.14cm} AG@{\hspace {0.14cm} AG}&\begingroup Algoritmos Genéticos\nomeqref {0}|nompageref}{13}
+\nomenclatureentry{a\hspace {0.14cm} SA@{\hspace {0.14cm} SA}&\begingroup inglês Simulated Annealing\nomeqref {0}|nompageref}{14}
+\nomenclatureentry{a\hspace {0.14cm} VNS@{\hspace {0.14cm} VNS}&\begingroup \textit {Variable Neighborhood Search}\nomeqref {0}|nompageref}{15}
+\nomenclatureentry{a\hspace {0.14cm} GRASP@{\hspace {0.14cm} GRASP}&\begingroup \textit {Greedy Randomized Adaptive Search Procedures}\nomeqref {0}|nompageref}{15}
+\nomenclatureentry{a\hspace {0.14cm} ACO@{\hspace {0.14cm} ACO}&\begingroup Ant Colony Optimization\nomeqref {0}|nompageref}{16}

@@ -218,21 +218,10 @@ Há uma grande diferença entre a quantidade de dados que produzimos e a quantidad
 
 Mineração de dados é sobre resolver problemas por meio da análise de dados já presentes na base de dados e um dos seus objetivos é a descoberta de conhecimento através de técnicas computacionais, que são capazes de explorar um grande conjunto de dados evidenciando padrões e auxiliando na descoberta de conhecimento. Este desenfreado crescimento de base de dados, traz a mineração de dados para o primeiro plano das novas tecnologias \cite{WITTEN2017}. 
 
-A construção de um classificador é uma tarefa básica na analise de dados e reconhecimento de padrões na Mineração de Dados. Simplificadamente, um classificador é uma função que assemelha com base em um conjunto de atributos um valor ao rotulo da classe \cite{FRIEDMAN1997}.
+A construção de um classificador é uma tarefa básica na analise de dados e reconhecimento de padrões na mineração de dados. Simplificadamente, um classificador é uma função que assemelha com base em um conjunto de atributos um valor ao rotulo da classe \cite{FRIEDMAN1997}.
 
 As Redes Bayesianas (serão explicadas na seção \ref{redesBayesianas}) tem se destacado como uma das abordagens mais promissoras no processo de descoberta de conhecimento em base de dados e uma das suas implementações mais conhecidas é o classificador \sigla{NB}{\textit{Naive Bayes}}\cite{SEBASTIANI2010}.
 O Naive Bayes é um classificador probabilístisco e tem como principal pressuposto a independência entre seus atributos. 
-
-\section{ORGANIZAÇÃO DO TEXTO} \label{organizacaoTexto}
-
-Na seção \ref{problema} serão abordados os problemas que motivaram o desenvolvimento deste trabalho.
-
-A justificativa para a execução deste trabalho encontra-se na seção \ref{justificativa}.
-
-Nas seções \ref{classificacao}, \ref{algoritmosEvolutivos} e \ref{colonicaFormigas} serão introduzidos conceitos sobre os algoritmos que envolvem este trabalho.
-
-Na seção \ref{proposta} será abordado detalhes da proposta deste trabalho, como cronograma e atividades a serem realizadas.
-
 
 \section{PROBLEMA} \label{problema}
 No situações reais a independência de atributos é irreal. Diante da limitação de independência entre os atributos, diversos trabalhos foram realizados sobre possíveis modificações na estrutura do NB. Um dos métodos de melhoria dos resultados obtidos pelo NB é extensão da estrutura do classificador, que consiste na representação de  dependências entre os atributos \cite{JIANG2007}.
@@ -243,11 +232,11 @@ Em \cite{COOPER1990} foi provado que tentar encontrar a melhor rede bayesiana ge
 
 \section{JUSTIFICATIVA} \label{justificativa}
 
-A procura por algoritmos meta-heuristicos, que são capazes de encontrar boas soluções realizando uma busca no espaço das possíveis soluções, tem aumentado para resolver os complexos problemas existentes no mundo real \cite{LARRANAGA2013}. 
+A procura por algoritmos meta-heurísticos, que são capazes de encontrar boas soluções realizando uma busca no espaço das possíveis soluções, tem aumentado para resolver os complexos problemas existentes no mundo real \cite{LARRANAGA2013}. 
 
 Os algoritmos evolutivos são um dos mais bem sucedidos a conseguir resultados em diversos campos de atuação.  Aplicando seus mecanismos inspirados na evolução natureza, por exemplo, a sobrevivência do mais apto ou cruzamento genético e mutação, em uma população de soluções candidatas, abordagens evolutivas como algoritmos genéticos foram capazes de realizar uma busca mais eficaz e diversificada no espaço de soluções para problemas difíceis \cite{LARRANAGA2013}.
 
-Com isso, visto o notável sucesso dos algoritmos evolutivos em problemas considerados difíceis, este trabalho propõe a utilização de algoritmos Evolutivos e seus derivados como uma possível solução para o problema dos classificadores bayesianos gerados pelo algoritmo KDBC.
+Com isso, visto o notável sucesso dos algoritmos evolutivos em problemas considerados difíceis, este trabalho propõe a utilização de algoritmos evolutivos e seus derivados como uma possível solução para o problema dos classificadores bayesianos gerados pelo algoritmo KDBC.
 
 
 
@@ -261,31 +250,25 @@ Se $A$, $B$ e $C$ são evento, a probabilidade de que estes eventos ocorram, $P(A
 A probabilidade de que um evento está ligada diretamente a quantidade de vezes em que ele ocorre em relação a quantidade de vezes em que um experimento é realizado.
 Logo, se um evento $E$ ocorre $N$ vezes em um experimento realizado $M$ vezes, então temos que $P(E) = M/N$ \cite{DOUGHERTY2012}.
 
-Para entender melhor o Teorema de Bayes que será explicado neste capitulo considere as seguintes definições:
+Eventos mutualmente exclusivos são eventos que não podem ocorrer ao mesmo tempo. Da mesma forma podemos definidir quando um eventos não é mutualmente exclusivo. Assim se $E$ e $F$ não são mutualmente exclusivos, podemos calcular a união dos mesmo pela equação \ref{eq:naoMutualmenteExclusivos}.  
+%\begin{equation}
+  %P (E \cup F) = P(E) + P(F)
+%\label{eq:mutualmenteExclusivos}
+%\end{equation}
 
-\begin{itemize}
-\item \textbf{Eventos mutualmente exclusivos}
-
-Eventos mutualmente exclusivos são eventos que não podem ocorrer ao mesmo tempo. Se $E$ e $F$ são mutualmente exclusivos, então a probabilidade da união entre eles é dada pela seguinte equação: 
-\begin{equation}
-  P (E \cup F) = P(E) + P(F)
-\label{eq:mutualmenteExclusivos}
-\end{equation}
-
-Da mesma forma podemos ter eventos que não sejam mutualmente exclusivos, ou seja, podem ocorrer ao mesmo tempo. Neste caso eles são representados pela seguinte equação:
+%Da mesma forma podemos ter eventos que não sejam mutualmente exclusivos, ou seja, podem ocorrer ao mesmo tempo. Neste caso eles são representados pela seguinte equação:
 \begin{equation}
   P (E \cup F) = P(E) + P(F) - P(E \cap F)
 \label{eq:naoMutualmenteExclusivos}
 \end{equation}
 
-Onde, $P (E \cap F)$ é a verificação de que os eventos sejam independentes, definida pela equação \ref{eq:interseccao}: 
+Onde, $P (E \cap F)$ é a verificação de que os eventos são independentes e pode ser expressa pela equação \ref{eq:interseccao}: 
 
 \begin{equation}
   P (E \cap F) = P(E) \cdot P(F)
 \label{eq:interseccao}
 \end{equation}
 
-\item \textbf{Probabilidade Condicional}
 
 A probabilidade condicional é a probabilidade de um evento $E$ ocorrer em função da ocorrência de outro evento $F$. A sua representação é dado por $P(E|F)$ e é lida como ``a probabilidade de E, dado que F é verdadeiro'' \cite{DOUGHERTY2012}.
 Uma das formas de calcular a  probabilidade condicional entre os eventos $E$ e $F$ é dada pela seguinte equação:
@@ -302,30 +285,25 @@ E da mesma forma para calcularmos $P(F|E)$, temos:
 \label{eq:PFE}
 \end{equation}
 
-\item \textbf{Regra do Produto de Probabilidades}
-
-Se aplicarmos a multiplicação cruzada nas equações \ref{eq:PEF} e \ref{eq:PFE}, obtemos a seguinte equação:
+Assim manipulando e aplicando multiplacação cruzadas nas equações \ref{eq:interseccao}, \ref{eq:PEF} e \ref{eq:PFE},  obtemos a seguinte equação:
 
 \begin{equation}
   P (E \cap F) = P(E|F) \cdot P(F) = P(F|E) \cdot P(E) 
 \label{eq:PEcapF}
 \end{equation}
 
-\end{itemize}
-
-Dadas as considerações das a cima, manipulando os dois termos mais a direita da  equação \ref{eq:PEcapF} chegamos enfim na equação do \textbf{Teorema de Bayes} como pode ser visto a seguir:
+Dadas as considerações das acima, manipulando os dois termos mais a direita da  equação \ref{eq:PEcapF} chegamos enfim na equação do \textbf{Teorema de Bayes} como pode ser visto a seguir:
 \begin{equation}
   P (E|F) = \frac{P(F|E) \cdot P(E)}{P(F)}
 \label{eq:teoremaBayes}
 \end{equation}
 
-Onde a probabilidade de $P(E|F)$ é conhecida como \textbf{probabilidade posteriori} de um determinado evento $E$ ocorrer dado a ocorrência do evento $F$ a partir do conhecimento de estimativas das probabilidades $P(E)$ e $P(F)$ e do conhecimento da probabilidade condicional $P(F|E)$. A probabilidade posteriori pode ser expressa informalmente como:
-
+Onde a probabilidade de $P(E|F)$ é conhecida como \textbf{probabilidade posteriori} de um determinado evento $E$ ocorrer dado a ocorrência do evento $F$ a partir do conhecimento de estimativas das probabilidades $P(E)$ e $P(F)$ e do conhecimento da probabilidade condicional $P(F|E)$.
+Neste contexto o termo $P(E)$ pode ser ligo como ``priori''; $P(F|E)$ pode ser lido como ``verosimilhanca''; $P(F)$ pode ser lido como ``evidência''.
 \begin{equation}
   posteriori = \frac{verosimilhanca \cdot priori}{evidencia}
 \label{eq:probPosteriori}
 \end{equation}
-
 Com base no Teorema de Bayes surgiram os classificadores Bayesianos que serão explicados nas seções \ref{redesBayesianas} e \ref{classificadoresBayesianos}.
 
 \section{Redes Bayesianas} \label{redesBayesianas}
@@ -333,11 +311,11 @@ Segundo \cite{SEBASTIANI2010}, atualmente as redes Bayesianos são uma das aborda
 
 As redes bayesianas pertencem a uma classe mais geral de modelos chamados de modelos probabilísticos gráficos que surgiram da combinação da teoria de grafos e da teoria da probabilidade.
 O seu sucesso se deve a sua capacidade de lidar com modelos probabilísticos complexos através da decomposição em componentes menores e acessíveis.
-Um modelo probabilístico gráfico é definido por uma grafo onde os nós representam variáveis estocásticas e os arcos representam as dependências entre tais variáveis. 
-Esses arcos são marcos pela probabilidade de distribuição de interação entre as variáveis vinculadas\cite{SEBASTIANI2010}. 
+Um modelo probabilístico gráfico é definido por uma grafo onde os nós representam variáveis estocásticas(que não seguem nenhum padrão) e os arcos representam as dependências entre tais variáveis. 
+Esses arcos são marcados pela probabilidade de distribuição de interação entre as variáveis vinculadas\cite{SEBASTIANI2010}. 
 
 Uma rede Bayesiana é um modelo gráfico probabilístico onde o grafo conectando suas variáveis é um Grafo Acíclico Dirigido ( do inglês, DAG - \textit{Directed Acyclic Graph}). 
-Este grafo gerado representa suposições de independência condicional entre os atributos que são usados para fatorar a distribuição de probabilidade conjunta das variáveis da rede. 
+Este grafo gerado representa suposições de independência condicional entre os atributos, que são usados para fatorar a distribuição de probabilidade conjunta das variáveis da rede. 
 Assim o processo de aprendizagem em bancos de dados, com grandes quantidades de dados torna-se possível.\cite{SEBASTIANI2010} .
 
 
@@ -378,45 +356,45 @@ Estendendo a estrutura do NB e utilizando arcos para explicitamente representar 
 Em \cite{SAHAMI1996} introduz o conceito do algoritmo KDBC, mostrando que a probabilidade de cada atributo é condicionada a classe e até $K$ outros atributos, ou seja, cada atributo poderá ter de 0 a $K$ dependências com outros atributos \cite{FLORES2011}.
 Aplicar esta extensão dos classificadores bayesianos, pode gerar um número inacessível computacionalmente de classificadores.
 
-Na figura \ref{fig:KDBC} é mostrado um exemplo onde temos $k=2$ para um problema com 3 atributos. Neste caso cada atributo poderá depender, além da classe, de mais 0, 1 ou 2 atributos. Na demonstração da figura \ref{fig:KDBC} não foram desenhadas todas as possíveis redes pra este exemplo.
+%Na figura \ref{fig:KDBC} é mostrado um exemplo onde temos $k=2$ para um problema com 3 atributos. Neste caso cada atributo poderá depender, além da classe, de mais 0, 1 ou 2 atributos. Na demonstração da figura \ref{fig:KDBC} não foram desenhadas todas as possíveis redes pra este exemplo.
 
-\begin{figure}[!htb]
+%\begin{figure}[!htb]
  % \captionsetup{width=\textwidth}
   
   
-  \begin{center}
-  \mbox{%
-    \subfloat{
-    \includegraphics[width=.5\linewidth]{./Figuras/KDBC0.png}
-    \label{fig:avr-prgmem}
-    }
-   }
-  \mbox{%
-    \subfloat{
-    \includegraphics[width=.5\linewidth]{./Figuras/KDBC1.png}
-    \label{fig:avr-prgmem}
-    }
-    \subfloat{
-    \includegraphics[width=.5\linewidth]{./Figuras/KDBC1.png}
-    \label{fig:avr-prgmem}
-    }
-   }
-   \mbox{%
-    \subfloat{
-    \includegraphics[width=.5\linewidth]{./Figuras/KDBC5.png}
-    \label{fig:avr-prgmem}
-    }
-    \subfloat{
-    \includegraphics[width=.5\linewidth]{./Figuras/KDBC2.png}
-    \label{fig:avr-prgmem}
-    }
-   }
-   
-   \caption{Algumas possíveis formas geradas pelo KDBC com 3 Atributos e $K$ = 2 (2-BDC).}
-  \fonte{Autoria Própria}
-  \label{fig:KDBC}
-  \end{center}
-\end{figure}
+ % \begin{center}
+%  \mbox{%
+    %\subfloat{
+    %\includegraphics[width=.5\linewidth]{./Figuras/KDBC0.png}
+    %\label{fig:avr-prgmem}
+    %}
+   %}
+  %\mbox{%
+    %\subfloat{
+    %\includegraphics[width=.5\linewidth]{./Figuras/KDBC1.png}
+    %\label{fig:avr-prgmem}
+    %}
+    %\subfloat{
+    %\includegraphics[width=.5\linewidth]{./Figuras/KDBC4.png}
+    %\label{fig:avr-prgmem}
+    %}
+   %}
+   %\mbox{%
+%    \subfloat{
+    %\includegraphics[width=.5\linewidth]{./Figuras/KDBC5.png}
+%    \label{fig:avr-prgmem}
+    %}
+    %\subfloat{
+    %\includegraphics[width=.5\linewidth]{./Figuras/KDBC2.png}
+    %\label{fig:avr-prgmem}
+    %}
+   %}
+%   
+   %\caption{Algumas possíveis formas geradas pelo KDBC com 3 Atributos e $K$ = 2 (2-BDC).}
+  %\fonte{Autoria Própria}
+  %\label{fig:KDBC}
+  %\end{center}
+%\end{figure}
 
 \chapter{Heurísticas e Meta-heurísticas}
 
@@ -449,7 +427,7 @@ A figura \ref{fig:fluxogramaEvolutivo} representa a mais comum representação de 
 	\caption[Fluxograma de um Típico Algoritmo Evolutivo]{Fluxograma de um Típico Algoritmo Evolutivo}
 	\fonte{Releitura de \cite{LARRANAGA2013}}
 	\label{fig:fluxogramaEvolutivo}	
-	\includegraphics[width=1\linewidth]{Figuras/algoritmosEvolucionariosWorkFlow.png}
+	\includegraphics[width=0.7\linewidth]{Figuras/algoritmosEvolucionariosWorkFlow.png}
 	
 	
 \end{figure}
@@ -528,22 +506,22 @@ A demonstração do problema pode ser visto na figura ~\ref{fig:aco} .
   \begin{center}
   \mbox{%
     \subfloat[Demonstração do ambiente. Dois caminhos possíveis a serem percorridos entre dois pontos.]{
-    \includegraphics[width=.3\linewidth]{./Figuras/figura1a}
+    \includegraphics[width=.5\linewidth]{./Figuras/figura1a}
     \label{fig:figACOa}
     }
     \subfloat[Probabilisticamente no início, 50\% das formigas vão pelo menor caminho(circulos) e 50\% das formigas vão pelo maior caminho(quadrados).]{
-    \includegraphics[width=.3\linewidth]{./Figuras/figura1b}
+    \includegraphics[width=.5\linewidth]{./Figuras/figura1b}
     \label{fig:figACOb}
     }
     
   }
        \mbox{%
     \subfloat[][As formigas que pegaram o menor caminho chegam antes a comida. A probabilidade delas retornarem pelo mesmo caminho é alta.]{
-    \includegraphics[width=.3\linewidth]{./Figuras/figura1c}
+    \includegraphics[width=.5\linewidth]{./Figuras/figura1c}
     \label{fig:figACOc}
     }
     \subfloat[][O feromônio espalhado pelo menor caminho tem probabilidade de ser mais forte, assim as outras formigas também escolhem este caminho.]{
-    \includegraphics[width=.3\linewidth]{./Figuras/figura1d}
+    \includegraphics[width=.5\linewidth]{./Figuras/figura1d}
     \label{fig:figACOd}
     }
        }
@@ -559,27 +537,32 @@ A demonstração do problema pode ser visto na figura ~\ref{fig:aco} .
 
 
 \chapter{PROPOSTA} \label{proposta}
+As redes bayesianas são uma importante classe de modelos probabiíisticos que se mostram muito eficazes em domínios incertos. 
+Elas são estudadas ao longo das últimas três décadas e muitos métodos têm sido propostos para automatizar sua aprendizagem e inferência.
+No entanto, muitos destes métodos envolvem difíceis problemas de pesquisa combinatória que afetam diretamente seu uso generalizado, especialmente para grandes instâncias de problema, e assim requerem técnicas avançadas de busca como meta-heurísticas \cite{LARRANAGA2013}.
+
+Algoritmos evolutivos, são métodos de busca estocástica de propósito geral inspirados na evolução natural e frequentemente aplicado para resolver muitos problemas complexos do mundo real. Devido às suas vantagens, diferentes tipos de algoritmos evolutivos têm sido utilizados nas redes Bayesianas \cite{LARRANAGA2013}.
 
 Em \cite{FLORES2011} propões o uso de um tipo de AGs, que considera que todas as variáveis são independentes na hora da construção do modelo, para buscar por melhores representações de depências entre os atributos preditores nas Redes Bayesianas.
 
-Enquanto em \cite{SIERRA1998} é proposta o uso de AGs para encontrar a melhor relação entre os nós pais e filhos para atributos classe de problemas do mundo real. 
+Enquanto em \cite{SIEERA1998} é proposta o uso de AGs para encontrar a melhor relação entre os nós pais e filhos para atributos classe de problemas do mundo real. 
 Eles compararam os resultados de seus classificadores com o NB e com classificadores bayesianos aprendidos por maximização de vizinhança. 
 Quando comparados foi verificado que os classificadores gerados por seus métodos utiliando GAs obtiveram um número maior de acerto do que os outros classificadores. 
 Este método foi utilizado em um esquema multi-classificador para classificar dados de pacientes da unidade de terapia intensiva.
 
 Em \cite{PENA2004} foi mostrado o uso de GAs na busca estruturas mais precisas para Redes Bayesianas em problemas de predição de Tromboembolismo (coágulo de sangue nas veias, mais conhecido popularmente como trombose).
 
-As redes bayesianas são uma importante classe de modelos probabiíisticos que se mostram muito eficazes em domínios incertos. Elas são estudadas ao longo das últimas três décadas e muitos métodos têm sido propostos para automatizar sua aprendizagem e inferência.
-No entanto, muitos destes métodos envolvem difíceis problemas de pesquisa combinatória que afetam diretamente seu uso generalizado, especialmente para grandes instâncias de problema, e assim requerem técnicas avançadas de busca como meta-heurísticas \cite{LARRANAGA2013}.
+Um dos pontos críticos na utilização de Algoritmos evolutivos é a escolha da representação das redes como indivíduos. Pois a representação do indivíduo pode impactaro desempenho computacional dos algoritmos.
 
-Algoritmos evolutivos, são métodos de busca estocástica de propósito geral inspirados na evolução natural e frequentemente aplicado para resolver muitos problemas complexos do mundo real. Devido às suas vantagens, diferentes tipos de algoritmos evolutivos têm sido utilizados nas redes Bayesianas \cite{LARRANAGA2013}.
-
-Um dos pontos chaves da utilização de Algoritmos evolutivos combiandos com redes bayesianas, é a escolha da representação das redes como indivíduos. Pois a representação do indivíduo pode impactar de maneira grande o desempenho computacional do algoritmos.
-Como consequência dessa necessidade vários trabalhos focam boa parte de seus estudos em maneiras de representação de grafos como indivíduos em Algortimos Evolutivos.
+Visto o confirmado desempenho dos trabalhos citados acima e a necessidade de um boa forma de representação das redes bayesianas como indivíduos, durante o desenvolvimento deste trabalho iremos estudar mais detalhadamente as abordagens realizadas nos trabalhos mencionados.
 
 
-Este trabalho pretende encontrar uma representação para redes bayesianas que se adeque aos algoritmos utilizados.Assim este trabalho propõe a aplicação de Algortimos Evolutivos, métodos de busca heuristicas e meta-heuristicas para melhorar ou buscar pela melhor rede bayesiana. Este trabalho também abre para a possibilidade da utilização de algortimos de busca local para melhorar as relações de dependência entre os atributos.
 
+
+Levando em consideração as vantagens na utilização de algortimos evolutivos e o problema encontrado em relação as redes bayesianas, propõe-se a aplicação de algortimos evolutivos, métodos de busca heuristicas e meta-heuristicas para melhorar ou buscar pela melhor rede bayesiana gerada pelo KDBC.
+Todavia, antes da aplicação dos algortimos este trabalho irá encontrar uma representação adequada para redes bayesianas em forma de indivíduos para os algortimos evolutivos, baseando-se nos trabalhos citados anteriormente. Tais definições serão realizadas até final de Julho.
+Como o método de representação ainda não foi definido, ainda não sabe-se como será o método de avaliação dos algortimos.
+Este trabalho também abre para a possibilidade da utilização de algortimos de busca local para melhorar as relações de dependência entre os atributos dos classificadores bayesianos.
 
 
 \section{ATIVIDADES PLANEJADAS}
